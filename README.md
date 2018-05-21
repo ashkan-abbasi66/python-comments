@@ -1,5 +1,6 @@
 # python tips and tricks 
 This repo. contains useful python tips for me!
+<br>Implements\PythonCodes
 
 # object oriented programing
 simple examples based on Learn Python in One Day (2nd Edition) - page: 68<br> see `simple-object-oriented-example/main.ipynb`.
