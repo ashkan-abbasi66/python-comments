@@ -12,4 +12,5 @@ def showImage(title,A):
 
 Y = cv2.imread('barbara.tif',0)/255
 showImage('original',Y)
-'''
+```
+
