@@ -1,6 +1,8 @@
 # python tips and tricks 
 This repo. contains useful python tips for me!
 
+# object oriented in python
+simple examples based on Learn Python in One Day (2nd Edition) - page: 68--simple-object-oriented-example<br> see `main.ipynb`.
 # show image
 ```python
 import cv2
