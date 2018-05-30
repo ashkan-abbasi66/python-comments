@@ -4,6 +4,10 @@
 #   python example2.py -n ashkan
 #   python example2.py -n ashkan -2nd-name ali
 
+# keywords:
+# argparse.ArgumentParser()
+# add_argument
+# vars(ap.parse_args())
 
 import argparse # makes it easy to write user-friendly command-line interfaces.
 # official example can be found here: https://docs.python.org/3.3/library/argparse.html
