@@ -22,3 +22,15 @@ showImage('original',Y)
 see `commandline-arguments-examples`:<br>
 `example1.py`: `sys.argv`, `string.startswith`, `string.split`<br>
 `example2.py`: `argparse.ArgumentParser()`, `add_argument`, `vars(ap.parse_args())`
+# Assert
+`assert condition`
+<br>is equivalent to:<br>
+```python
+if not condition:
+    raise AssertionError()
+```<br>
+Another example:
+`assert 2 + 2 == 5, "We've got a problem"`
+<br>Note that assert is an statement. So, the following command will not work:
+`assert(2 + 2 == 5, "We've got a problem")`
+The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a non-empty tuple evaluates to True in a boolean context).
