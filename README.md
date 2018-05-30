@@ -1,9 +1,14 @@
 # python tips and tricks 
 This repo. contains useful python tips for me!
 <br>Implements\PythonCodes
+- [object oriented programing](#ood)
+- [show image](#imshow)
+- 
 
+<a id="ood"></a>
 # object oriented programing
 simple examples based on Learn Python in One Day (2nd Edition) - page: 68<br> see `simple-object-oriented-example/main.ipynb`.
+<a id="imshow"></a>
 # show image
 ```python
 import cv2
