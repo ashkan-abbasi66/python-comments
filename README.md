@@ -16,4 +16,9 @@ def showImage(title,A):
 Y = cv2.imread('barbara.tif',0)/255
 showImage('original',Y)
 ```
-
+# Parsing command line arguments
+`sys.argv` is a list which contains the command-line arguments. <br>
+`argparse` module makes it easy to write user-friendly command-line interfaces. It automatically generates help and usage messages and raise exceptions.<br>
+see `commandline-arguments-examples`:<br>
+`example1.py`: `sys.argv`, `string.startswith`, `string.split`<br>
+`example2.py`: `argparse.ArgumentParser()`, `add_argument`, `vars(ap.parse_args())`
