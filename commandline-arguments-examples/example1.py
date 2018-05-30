@@ -1,6 +1,7 @@
 # command-line arguments
 # How to parse command line arguments
 
+# keywords:
 # sys.argv
 # string.startswith
 # string.split
