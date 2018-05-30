@@ -3,7 +3,9 @@ This repo. contains useful python tips for me!
 <br>Implements\PythonCodes
 - [object oriented programing](#ood)
 - [show image](#imshow)
-- 
+- [Parsing command line arguments](#sysargv)
+- [Assert](#exception)
+- [Tensorflow](#tf)
 
 <a id="ood"></a>
 # object oriented programing
@@ -21,12 +23,15 @@ def showImage(title,A):
 Y = cv2.imread('barbara.tif',0)/255
 showImage('original',Y)
 ```
+<a id="sysargv"></a>
 # Parsing command line arguments
 `sys.argv` is a list which contains the command-line arguments. <br>
 `argparse` module makes it easy to write user-friendly command-line interfaces. It automatically generates help and usage messages and raise exceptions.<br>
 see `commandline-arguments-examples`:<br>
 `example1.py`: `sys.argv`, `string.startswith`, `string.split`<br>
 `example2.py`: `argparse.ArgumentParser()`, `add_argument`, `vars(ap.parse_args())`
+
+<a id="exception"></a>
 # Assert
 `assert condition`
 <br>is equivalent to:<br>
@@ -39,7 +44,10 @@ if not condition:
 <br>Note that assert is an statement. So, the following command will not work:
 `assert(2 + 2 == 5, "We've got a problem")`
 The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a non-empty tuple evaluates to True in a boolean context).
-# Tensorflow - spatial filtering
+
+<a id="tf"></a>
+# Tensorflow
+## spatial filtering
 ```python
 import tensorflow as tf
 import numpy as np
