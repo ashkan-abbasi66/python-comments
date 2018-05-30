@@ -28,8 +28,8 @@ see `commandline-arguments-examples`:<br>
 ```python
 if not condition:
     raise AssertionError()
-```<br>
-Another example:
+```
+<br> Another example:
 `assert 2 + 2 == 5, "We've got a problem"`
 <br>Note that assert is an statement. So, the following command will not work:
 `assert(2 + 2 == 5, "We've got a problem")`
