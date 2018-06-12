@@ -4,6 +4,7 @@
 # Note: this is just a note! you can't run it.
 
 # [CAN24](https://github.com/CQFIO/FastImageProcessing)
+# Goal: apptoximating time-consuming image processing operators using CNNs.
 
 import numpy as np
 import tensorflow as tf
