@@ -35,6 +35,10 @@ def nm(x):
 
 def build(input):
 # define the network architecture
+# basic block: r-dilated convolution (C*r)+adaptive batch normalization(BN)+leaky relu(LR)
+# L^0: input, L^1: (C*1+BN+LR), L^2: (C*2+BN+LR), ...,L^7: (C*64+BN+LR), L^8: (C*1+BN+LR), L^9: (C*1+BN+LR)
+# all layers perform 3x3 convolution, except the last one which is 1x1.
+#
 # INPUTS:
 #  a placeholder for storing network's input.
 #   RGB images: input=tf.placeholder(tf.float32,shape=[None,None,None,3])
