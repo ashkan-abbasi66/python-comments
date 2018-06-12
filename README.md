@@ -53,4 +53,4 @@ Folder: `tf-example` <br>
 - control cpu cores or gpu usage `control_gpu_cpu.py` <br>
 - How to design and code nn layers:
 > - `building_nnlayers_CAN24.py`
-
+> - `building_nnlayers_DPED_Resnet.py`
