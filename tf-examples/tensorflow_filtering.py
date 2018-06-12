@@ -21,6 +21,7 @@ X = tf.placeholder(tf.float32, shape=(None, height, width, channels))
 convolution = tf.nn.conv2d(X, filters, strides=[1,2,2,1], padding="SAME")
 # In `tf.nn.conv2d`, `filter` is a tensor with shape [filter_height, filter_width, in_channels, out_channels]
 # In `tf.layers.conv2d`, `filters` is an integer which is the dimensionality of the output space.
+# tf.layers is the official API.
 
 with tf.Session() as sess:
     output = sess.run(convolution, feed_dict={X: dataset})
