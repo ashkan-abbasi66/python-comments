@@ -50,4 +50,7 @@ The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a 
 Folder: `tf-example` <br>
 - perform convolution for spatial filtering with two simple filters `tensorflow_filtering.py` <br>
 - comparisson between gpu and cpu computations `matrixmult_cpu_versus_gpu.py` <br>
+- control cpu cores or gpu usage `control_gpu_cpu.py` <br>
+- How to design and code nn layers:
+> - `building_nnlayers_CAN24.py`
 
