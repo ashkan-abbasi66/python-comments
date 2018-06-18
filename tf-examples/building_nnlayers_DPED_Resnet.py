@@ -32,7 +32,7 @@
 # Summary of the structure:
 # i -> C1: C(9*9),R -> C2: C(3*3),BN,R -> C3: (C,BN,R)+C1 -> C4: C,BN,R -> C5: (C,BN,R)+C3
 #   -> C6: C,BN,R -> C7: (C,BN,R)+C5 -> C8: C,BN,R -> C9: (C,BN,R)+C7
-#   -> C10: C,R   -> C11: C,R -> C12: C(9*9),tanh*0.58+0.5 -> enhanced
+#   -> C10: C,R   -> C11: C,R -> C12: C(9*9),tanh*0.58+0.5 (enhanced image - 3 channels)
 
 import tensorflow as tf
 
