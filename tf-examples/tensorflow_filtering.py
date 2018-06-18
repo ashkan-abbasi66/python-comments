@@ -19,9 +19,12 @@ filters[3, :, :, 1] = 1  # horizontal line
 X = tf.placeholder(tf.float32, shape=(None, height, width, channels))
 
 convolution = tf.nn.conv2d(X, filters, strides=[1,2,2,1], padding="SAME")
+# input/output shape: N*H*W*C; N: number of samples; C: number of input channels
 # In `tf.nn.conv2d`, `filter` is a tensor with shape [filter_height, filter_width, in_channels, out_channels]
-# In `tf.layers.conv2d`, `filters` is an integer which is the dimensionality of the output space.
-# tf.layers is the official API.
+#       filter shape: h*w*(# of FMs in the previous layer)*(# of FMs); FMs: feature maps
+#
+# We can also define a conv. layer with `tf.layers.conv2d`. However, in this function `filters` is an integer which is 
+# the dimensionality of the output space. Note that `tf.layers` is the official API.
 
 with tf.Session() as sess:
     output = sess.run(convolution, feed_dict={X: dataset})
