@@ -1,3 +1,39 @@
+# Simple Example:
+# input/output shape: N*H*W*C
+# filter shape: h*w*(# of FMs in the previous layer)*(# of FMs); FMs: feature maps
+#
+# with tf.variable_scope("generator"):
+#     W1=tf.Variable(tf.truncated_normal([9, 9, 3, 64], stddev=0.01), name="W1")
+#     conv1=tf.nn.conv2d(input, W1, strides=[1, 1, 1, 1], padding='SAME')
+#     b1=tf.Variable(tf.constant(0.01, shape=64),name="b1")
+#     conv1=conv1+b1
+#     conv1=tf.nn.relu(conv1)
+#
+#     -------------- Residual Block 1 --------------
+#     W2=tf.Variable(tf.truncated_normal([3, 3, 64, 64], stddev=0.01), name="W2")
+#     conv2=tf.nn.conv2d(conv1, W2, strides=[1, 1, 1, 1], padding='SAME')
+#     b2=tf.Variable(tf.constant(0.01, shape=64),name="b2")
+#     conv2=conv2+b2
+#     conv2=_instance_norm(conv2) # batch normalization
+#     conv2=tf.nn.relu(conv2)
+#
+#     W3=tf.Variable(tf.truncated_normal([3, 3, 64, 64], stddev=0.01), name="W3")
+#     conv3=tf.nn.conv2d(conv2, W3, strides=[1, 1, 1, 1], padding='SAME')
+#     b3=tf.Variable(tf.constant(0.01, shape=64),name="b3")
+#     conv3=conv3+b3
+#     conv3=_instance_norm(conv3) # batch normalization
+#     conv3=tf.nn.relu(conv3)
+#
+#     conv3=conv3+conv1 # skip connection
+#     -----------------------------------------------
+#     ....(see the rest of the code)
+
+
+# Summary of the structure:
+# i -> C1: C(9*9),R -> C2: C(3*3),BN,R -> C3: (C,BN,R)+C1 -> C4: C,BN,R -> C5: (C,BN,R)+C3
+#   -> C6: C,BN,R -> C7: (C,BN,R)+C5 -> C8: C,BN,R -> C9: (C,BN,R)+C7
+#   -> C10: C,R   -> C11: C,R -> C12: C(9*9),tanh*0.58+0.5 -> enhanced
+
 import tensorflow as tf
 
 def conv2d(x, W):
@@ -90,3 +126,11 @@ def resnet(input_image):
         enhanced = tf.nn.tanh(conv2d(c11, W12) + b12) * 0.58 + 0.5
 
     return enhanced
+
+# enhanced = models.resnet(phone_image)
+# loss_generator = w_content * loss_content + w_texture * loss_texture + w_color * loss_color + w_tv * loss_tv
+# generator_vars = [v for v in tf.global_variables() if v.name.startswith("generator")]
+# train_step_gen = tf.train.AdamOptimizer(learning_rate).minimize(loss_generator, var_list=generator_vars)
+# saver = tf.train.Saver(var_list=generator_vars, max_to_keep=100)
+# sess.run(tf.global_variables_initializer())
+# ....
