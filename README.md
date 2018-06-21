@@ -54,3 +54,8 @@ Folder: `tf-example` <br>
 - How to design and code nn layers:
 > - `building_nnlayers_CAN24.py`
 > - `building_nnlayers_DPED_Resnet.py`
+
+# Import Data
+`load_dataset.py`
+- load image pairs
+- load a random subset of patch pairs.
