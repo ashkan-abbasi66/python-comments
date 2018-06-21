@@ -6,7 +6,7 @@ import sys
 
 # Contents:
 # prepare_data(task)
-# load_batch(phone, dped_dir, TRAIN_SIZE, IMAGE_SIZE)
+# load_batch(task, TRAIN_SIZE, IMAGE_SIZE)
 
 
 # Suitable for a image to image translation task.
