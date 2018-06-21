@@ -6,6 +6,7 @@ This repo. contains useful python tips for me!
 - [Parsing command line arguments](#sysargv)
 - [Assert](#exception)
 - [Tensorflow](#tf)
+- [Import Data](#loadData)
 
 <a id="ood"></a>
 # object oriented programing
@@ -55,6 +56,7 @@ Folder: `tf-example` <br>
 > - `building_nnlayers_CAN24.py`
 > - `building_nnlayers_DPED_Resnet.py`
 
+<a id="loadData"></a>
 # Import Data
 `load_dataset.py`
 - load image pairs
