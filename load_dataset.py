@@ -41,7 +41,7 @@ def prepare_data(task):
 
 # Suitable for a patch-based training strategy
 def load_batch(task, TRAIN_SIZE, IMAGE_SIZE):
-    # Loads a subset of training dataset or the whole dataset (TRAIN_SIZE=-1)
+    # Loads a random subset of training dataset or the whole dataset (TRAIN_SIZE=-1)
     #
     # INPUTS:
     #   task: a folder name
