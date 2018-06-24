@@ -55,6 +55,33 @@ Folder: `tf-example` <br>
 - How to design and code nn layers:
 > - `building_nnlayers_CAN24.py`
 > - `building_nnlayers_DPED_Resnet.py`
+## Save model during training
+```python
+sess.run(tf.global_variables_initializer())
+
+# create a saver object
+saver=tf.train.Saver(max_to_keep=1000)
+
+# get check points if it is available
+ckpt=tf.train.get_checkpoint_state()
+if ckpt:
+    print('loaded '+ckpt.model_checkpoint_path)
+    saver.restore(sess,ckpt.model_checkpoint_path)
+for epoch in range(1,N_epochs):
+
+    # if a model is loaded, we can continue training with the loaded model.
+    if os.path.isdir("%d"%epoch):
+        continue
+    
+    # Do computations for each epoch
+    
+    # After each epoch, create a directory & save the model using saver object.
+    os.makedirs("%d"%epoch)
+    saver.save(sess,"%d/model.ckpt"%epoch)
+    
+    # [optional] At the end of each epoch, it is a good idea to evaluate the obtained model.
+    
+```
 
 <a id="loadData"></a>
 # Import Data
