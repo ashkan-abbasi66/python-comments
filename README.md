@@ -7,6 +7,7 @@ This repo. contains useful python tips for me!
 - [Assert](#exception)
 - [Tensorflow](#tf)
 - [Import Data](#loadData)
+- [ToDo](#todo)
 
 <a id="ood"></a>
 # object oriented programing
@@ -88,3 +89,6 @@ for epoch in range(1,N_epochs):
 `load_dataset.py`
 - load image pairs
 - load a random subset of patch pairs.
+<a id="todo"></a>
+# ToDo
+Save model during training
