@@ -6,6 +6,7 @@ This repo. contains useful python tips for me!
 - [Parsing command line arguments](#sysargv)
 - [Assert](#exception)
 - [Tensorflow](#tf)
+    -  [Save model during training](#tf-saveModel)
 - [Import Data](#loadData)
 - [ToDo](#todo)
 
@@ -56,6 +57,7 @@ Folder: `tf-example` <br>
 - How to design and code nn layers:
 > - `building_nnlayers_CAN24.py`
 > - `building_nnlayers_DPED_Resnet.py`
+<a id="tf-saveModel"></a>
 ## Save model during training
 ```python
 sess.run(tf.global_variables_initializer())
