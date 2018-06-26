@@ -92,3 +92,5 @@ for epoch in range(1,N_epochs):
 <a id="todo"></a>
 # ToDo
 Save model during training
+<br>
+slicing techniques: `slicing.py`
