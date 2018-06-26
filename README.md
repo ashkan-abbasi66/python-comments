@@ -88,14 +88,15 @@ for epoch in range(1,N_epochs):
     # [optional] At the end of each epoch, it is a good idea to evaluate the obtained model.
     
 ```
-A good structure is:<br>
+1. A good structure is:<br>
 -  `checkpoint_dir` or the output directory
     -  After last epoch, save the obtained model here.
 -  `checkpoint_dir/epoch number/`
     -  some statistics about each epoch.
     -  obtained validation/test results during training.
     -  save the obtained model in that epoch.
-What do they usually save using `saver.save(sess,path)`?<br>
+<br>
+2. What do they usually save using `saver.save(sess,path)`?<br>
 -  a file named `checkpoint` \[may contain CheckpointState proto\]
 -  `model.ckpt.data-00000-of-00001`
 -  `model.ckpt.index`
