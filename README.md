@@ -96,11 +96,13 @@ for epoch in range(1,N_epochs):
     -  obtained validation/test results during training.
     -  save the obtained model in that epoch.
 <br>
-2. What do they usually save using `saver.save(sess,path)`?<br>
--  a file named `checkpoint` \[may contain CheckpointState proto\]
--  `model.ckpt.data-00000-of-00001`
--  `model.ckpt.index`
--  `model.ckpt.meta`
+2. What do they usually save using `saver.save(sess,path)`? 
+<br>
+-  a file named `checkpoint` (may contain CheckpointState proto). <br>
+-  a file named `model.ckpt.data-00000-of-00001`.
+-  a file named `model.ckpt.index`.
+-  a file named `model.ckpt.meta`.
+At this time, I don't know much about those files!<br>
 
 <a id="loadData"></a>
 # Import Data
