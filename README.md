@@ -65,8 +65,8 @@ sess.run(tf.global_variables_initializer())
 # create a saver object
 saver=tf.train.Saver(max_to_keep=1000)
 
-# get check points if it is available
-ckpt=tf.train.get_checkpoint_state()
+# get `checkpoint` file if it is available in the directory `checkpoint_dir`
+ckpt=tf.train.get_checkpoint_state(checkpoint_dir) # <<<-------------
 if ckpt:
     print('loaded '+ckpt.model_checkpoint_path)
     saver.restore(sess,ckpt.model_checkpoint_path)
@@ -81,6 +81,9 @@ for epoch in range(1,N_epochs):
     # After each epoch, create a directory & save the model using saver object.
     os.makedirs("%d"%epoch)
     saver.save(sess,"%d/model.ckpt"%epoch)
+    saver.save(sess,checkpoint_dir) # <<<------------- 
+    
+    # it is a good idea to use "%d/model.ckpt"%(checkpoint_dir,epoch) instead of "%d/model.ckpt"%epoch
     
     # [optional] At the end of each epoch, it is a good idea to evaluate the obtained model.
     
