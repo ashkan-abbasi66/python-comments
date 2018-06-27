@@ -67,7 +67,7 @@ def build(input):
     #       "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"- (Submitted on 11 Feb 2015
     #       "Layer Normalization" - (Submitted on 21 Jul 2016)
     # weights_initializer: we can also use 'weights_regularizer'
-    #   weights_initializer=initializers.xavier_initializer() (default)
+    #   weights_initializer=tf.contrib.layers.xavier_initializer() (default)
     # Reguralizations:
     #   weights_regularizer=tf.contrib.layers.l1_regularizer
     #   weights_regularizer=slim.l1_regularizer(0.07)
