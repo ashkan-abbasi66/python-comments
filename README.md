@@ -83,7 +83,7 @@ for epoch in range(1,N_epochs):
     saver.save(sess,"%d/model.ckpt"%epoch)
     saver.save(sess,checkpoint_dir) # <<<------------- 
     
-    # it is a good idea to use "%d/model.ckpt"%(checkpoint_dir,epoch) instead of "%d/model.ckpt"%epoch
+    # it is a good idea to use "%s/%d/model.ckpt"%(checkpoint_dir,epoch) instead of "%d/model.ckpt"%epoch
     
     # [optional] At the end of each epoch, it is a good idea to evaluate the obtained model.
     
