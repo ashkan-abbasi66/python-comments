@@ -24,7 +24,12 @@ def showImage(title,A):
     cv2.waitKey(0)
 
 Y = cv2.imread('barbara.tif',0)/255
+sigma=50/255
+Yn=Y+sigma*np.random.randn(*Y.shape) # * can be used to unpack a list into its elements.
 showImage('original',Y)
+showImage('noisy',Yn)
+cv2.destroyAllWindows()
+
 ```
 <a id="sysargv"></a>
 # Parsing command line arguments
