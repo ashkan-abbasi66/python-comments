@@ -53,7 +53,9 @@ def showImage(title,A):
     fig = plt.figure()
     fig.suptitle(title)
     plt.imshow(A, origin='image', interpolation="nearest", cmap=plt.cm.gray)
+showImage('original',Y/255.)
 showImage('noisy',scaled_Yn)
+plt.show()
 ```
 <a id="sysargv"></a>
 # Parsing command line arguments
