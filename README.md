@@ -15,7 +15,7 @@ This repo. contains useful python tips for me!
 simple examples based on Learn Python in One Day (2nd Edition) - page: 68<br> see `simple-object-oriented-example/main.ipynb`.
 <a id="imshow"></a>
 # imread & imshow
-Using cv2 <br>
+Using **cv2** <br>
 ```python
 import cv2
 import numpy as np
@@ -32,7 +32,7 @@ showImage('noisy',Yn)
 cv2.destroyAllWindows()
 
 ```
-Using matplotlib
+Using **matplotlib**
 ```python
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -46,6 +46,14 @@ fig=plt.figure()
 fig.suptitle('noisy')
 plt.imshow(scaled_Yn,cmap='gray')
 plt.show()
+```
+You can also define a function to show images using matplotlib:
+```python
+def showImage(title,A):
+    fig = plt.figure()
+    fig.suptitle(title)
+    plt.imshow(A, origin='image', interpolation="nearest", cmap=plt.cm.gray)
+showImage('noisy',scaled_Yn)
 ```
 <a id="sysargv"></a>
 # Parsing command line arguments
