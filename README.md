@@ -2,7 +2,7 @@
 This repo. contains useful python tips for me!
 <br>Implements\PythonCodes
 - [object oriented programing](#ood)
-- [show image](#imshow)
+- [imread & imshow](#imshow)
 - [Parsing command line arguments](#sysargv)
 - [Assert](#exception)
 - [Tensorflow](#tf)
@@ -14,7 +14,7 @@ This repo. contains useful python tips for me!
 # object oriented programing
 simple examples based on Learn Python in One Day (2nd Edition) - page: 68<br> see `simple-object-oriented-example/main.ipynb`.
 <a id="imshow"></a>
-# show image
+# imread & imshow
 Using cv2 <br>
 ```python
 import cv2
