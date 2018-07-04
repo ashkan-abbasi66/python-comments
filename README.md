@@ -43,6 +43,7 @@ Yn=Y+50*np.random.randn(*Y.shape)
 scaled_Yn=Yn/255.
 
 fig=plt.figure()
+fig.suptitle('noisy')
 plt.imshow(scaled_Yn,cmap='gray')
 plt.show()
 ```
