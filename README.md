@@ -15,6 +15,7 @@ This repo. contains useful python tips for me!
 simple examples based on Learn Python in One Day (2nd Edition) - page: 68<br> see `simple-object-oriented-example/main.ipynb`.
 <a id="imshow"></a>
 # show image
+Using cv2 <br>
 ```python
 import cv2
 import numpy as np
@@ -30,6 +31,20 @@ showImage('original',Y)
 showImage('noisy',Yn)
 cv2.destroyAllWindows()
 
+```
+Using matplotlib
+```python
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+Y=mpimg.imread('barbara.tif')
+print(Y.dtype) # uint8
+Yn=Y+50*np.random.randn(*Y.shape)
+scaled_Yn=Yn/255.
+
+fig=plt.figure()
+plt.imshow(scaled_Yn,cmap='gray')
+plt.show()
 ```
 <a id="sysargv"></a>
 # Parsing command line arguments
