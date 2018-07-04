@@ -144,4 +144,4 @@ At this time, I don't know much about those files!<br>
 # ToDo
 Save model during training
 <br>
-slicing techniques: `slicing.py`
+indexing and slicing techniques: `indexing.py`
