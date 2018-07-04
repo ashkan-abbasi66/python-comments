@@ -57,6 +57,7 @@ showImage('original',Y/255.)
 showImage('noisy',scaled_Yn)
 plt.show()
 ```
+Note: cv2.imread is better based on my experience.
 <a id="sysargv"></a>
 # Parsing command line arguments
 `sys.argv` is a list which contains the command-line arguments. <br>
