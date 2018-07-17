@@ -143,6 +143,6 @@ At this time, I don't know much about those files!<br>
 - load a random subset of patch pairs.
 <a id="todo"></a>
 # ToDo
-Save model during training
-<br>
-indexing and slicing techniques: `indexing.py`
+`basic_tf.ipynb` TF basics.<br>
+indexing and slicing techniques: `indexing.py`<br>
+
