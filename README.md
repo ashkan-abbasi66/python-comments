@@ -83,6 +83,7 @@ The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a 
 <a id="tf"></a>
 # Tensorflow
 Folder: `tf-example` <br>
+- tensorflow basics: `tf_basics.ipynb`<br>
 - perform convolution for spatial filtering with two simple filters `tensorflow_filtering.py` <br>
 - comparisson between gpu and cpu computations `matrixmult_cpu_versus_gpu.py` <br>
 - control cpu cores or gpu usage `control_gpu_cpu.py` <br>
@@ -143,6 +144,5 @@ At this time, I don't know much about those files!<br>
 - load a random subset of patch pairs.
 <a id="todo"></a>
 # ToDo
-`basic_tf.ipynb` TF basics.<br>
 indexing and slicing techniques: `indexing.py`<br>
 
