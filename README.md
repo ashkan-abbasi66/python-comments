@@ -88,6 +88,7 @@ Folder: `tf-example` <br>
     - A two layer network using pure numpy
     - using tensorflow's Gradient Descent optimizer
 - `tf_train_save_restore.ipynb` contains examples for saving and restoring models.
+    - Restore a variable with a different name
 - perform convolution for spatial filtering with two simple filters `tensorflow_filtering.py` <br>
 - comparisson between gpu and cpu computations `matrixmult_cpu_versus_gpu.py` <br>
 - control cpu cores or gpu usage `control_gpu_cpu.py` <br>
