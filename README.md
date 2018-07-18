@@ -7,7 +7,7 @@ This repo. contains useful python tips for me!
 - [Assert](#exception)
 - [Tensorflow](#tf)
     -  [Save model during training](#tf-saveModel)
-- [Import Data](#loadData)
+- [Import Data or a module](#loadData)
 - [ToDo](#todo)
 
 <a id="ood"></a>
@@ -143,10 +143,18 @@ for epoch in range(1,N_epochs):
 At this time, I don't know much about those files!<br>
 
 <a id="loadData"></a>
-# Import Data
+# Import Data or a module
 `load_dataset.py`
 - load image pairs
-- load a random subset of patch pairs.
+- load a random subset of patch pairs.<br>
+
+Load a module
+```python
+module_path='.../module_name.py'
+from importlib.machinery import SourceFileLoader
+module_name = SourceFileLoader("module_name",module_path).load_module()
+
+```
 <a id="todo"></a>
 # ToDo
 indexing and slicing techniques: `indexing.py`<br>
