@@ -84,6 +84,10 @@ The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a 
 # Tensorflow
 Folder: `tf-example` <br>
 - tensorflow basics: `tf_basics.ipynb`<br>
+- some simple train examples: `tf_train_examples.ipynb`
+    - A two layer network using pure numpy
+    - using tensorflow's Gradient Descent optimizer
+- `tf_train_save_restore.ipynb` contains examples for saving and restoring models.
 - perform convolution for spatial filtering with two simple filters `tensorflow_filtering.py` <br>
 - comparisson between gpu and cpu computations `matrixmult_cpu_versus_gpu.py` <br>
 - control cpu cores or gpu usage `control_gpu_cpu.py` <br>
