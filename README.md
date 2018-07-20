@@ -57,7 +57,42 @@ showImage('original',Y/255.)
 showImage('noisy',scaled_Yn)
 plt.show()
 ```
-Note: cv2.imread is better based on my experience.
+Note: cv2.imread is better based on my experience.<br>
+Usint matplotlib or PIL (Pillow):<br>
+```python
+# read image using PIL
+from PIL import Image
+fname = 'barbara.tif'
+image = Image.open(fname)
+
+# convert to numpy array
+import numpy as np
+arr = np.asarray(image)
+print(arr.shape) # (512, 512)
+
+# add noise
+if arr.max()>1:
+    arr=arr/255
+
+arr=arr+20/255*np.random.randn(*arr.shape)
+
+# show the image using matplotlib
+import matplotlib.pyplot as plt
+plt.imshow(arr, cmap='gray')
+plt.show()
+
+# show the image using PIL
+noisy_image=Image.fromarray(arr*255.)
+noisy_image.show()
+
+# save the image using matplotlib
+import matplotlib.image as img
+img.imsave("noisy1.tif",arr,format='tif',cmap=plt.get_cmap('gray'))
+
+# save the image using PIL --- the saved image is NOT scaled.
+noisy_image=Image.fromarray(np.uint8(arr*255.))
+noisy_image.save('noisy2.tif')
+```
 <a id="sysargv"></a>
 # Parsing command line arguments
 `sys.argv` is a list which contains the command-line arguments. <br>
