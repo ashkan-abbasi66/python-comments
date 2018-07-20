@@ -47,6 +47,7 @@ fig.suptitle('noisy')
 plt.imshow(scaled_Yn,cmap='gray')
 plt.show()
 ```
+Note: Unfortunately, the image is shown like a color image!. Use PIL for reading the image.<br>
 You can also define a function to show images using matplotlib:
 ```python
 def showImage(title,A):
