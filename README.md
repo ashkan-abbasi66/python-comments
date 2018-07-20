@@ -57,13 +57,12 @@ showImage('original',Y/255.)
 showImage('noisy',scaled_Yn)
 plt.show()
 ```
-Note: cv2.imread is better based on my experience.<br>
-Usint matplotlib or PIL (Pillow):<br>
+Usint **matplotlib** or **PIL (Pillow)** for reading, showing and writing gray-scale images:<br>
 ```python
 # read image using PIL
 from PIL import Image
 fname = 'barbara.tif'
-image = Image.open(fname)
+image = Image.open(fname) #.convert('L') can be used to convert an rgb image to gray-scale
 
 # convert to numpy array
 import numpy as np
