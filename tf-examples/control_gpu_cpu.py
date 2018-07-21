@@ -2,9 +2,11 @@
 # inter_op_parallelism_threads=NUM_CORES, # add these lines to CongigProto
 # intra_op_parallelism_threads=NUM_CORES
 
-# device_count={'GPU': 0}
+# Using GPU or CPU
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 session_conf = tf.ConfigProto(
-      device_count={'CPU': 1, 'GPU': 0},
+      device_count={'CPU': 1,'GPU': 0}, # Exchange 1 and 0 if you do not want to use GPU.
       allow_soft_placement=True,
       log_device_placement=False
       )
