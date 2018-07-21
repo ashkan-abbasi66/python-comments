@@ -16,3 +16,7 @@ session_conf = tf.ConfigProto(
 # sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 # sess=tf.Session()
 sess = tf.Session(config=session_conf)
+
+# Don't use GPU!
+session_conf=tf.ConfigProto(device_count={'GPU': 0})
+sess=tf.Session(config=session_conf)
