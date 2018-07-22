@@ -1,4 +1,4 @@
-# python tips and tricks 
+# my python comments
 This repo. contains useful python tips for me!
 <br>Implements\PythonCodes
 - [object oriented programing](#ood)
