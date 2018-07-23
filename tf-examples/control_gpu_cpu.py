@@ -10,8 +10,17 @@ sess = tf.Session(config=session_conf)
 # inter_op_parallelism_threads=NUM_CORES, # add these lines to CongigProto
 # intra_op_parallelism_threads=NUM_CORES
 
+# Select utilizing GPU or cpu for operations
 # It seems that it is different for Linux and windows.
-# Using GPU or CPU
+# === WINDOWS ===
+# Use GPU
+os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+# Use CPU
+os.environ['CUDA_VISIBLE_DEVICES'] = "1"
+config = tf.ConfigProto(device_count = {'CPU': 1})
+sess=tf.Session(config=session_conf)
+# ===============
+
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 session_conf = tf.ConfigProto(
@@ -20,11 +29,4 @@ session_conf = tf.ConfigProto(
       log_device_placement=False
       )
 
-
-
-
-# Don't use GPU! --- Windows
-os.environ['CUDA_VISIBLE_DEVICES'] = "1"
-config = tf.ConfigProto(device_count = {'CPU': 1})
-sess=tf.Session(config=session_conf)
 
