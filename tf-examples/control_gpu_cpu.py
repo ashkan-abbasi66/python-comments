@@ -17,7 +17,7 @@ sess = tf.Session(config=session_conf)
 os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 # Use CPU
 os.environ['CUDA_VISIBLE_DEVICES'] = "1"
-config = tf.ConfigProto(device_count = {'CPU': 1})
+session_conf = tf.ConfigProto(device_count = {'CPU': 1})
 sess=tf.Session(config=session_conf)
 # ===============
 
