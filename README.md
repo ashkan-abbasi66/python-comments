@@ -118,6 +118,7 @@ The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a 
 <a id="tf"></a>
 # Tensorflow
 Folder: `tf-example` <br>
+- number of parameters of tensorflow model [here](https://stackoverflow.com/questions/47310132/number-of-cnn-learnable-parameters-python-tensorflow)
 - compute receptive field of a network. [here](https://stackoverflow.com/questions/35582521/how-to-calculate-receptive-field-size)
 - tensorflow basics: `tf_basics.ipynb`<br>
 - some simple train examples: `tf_train_examples.ipynb`
