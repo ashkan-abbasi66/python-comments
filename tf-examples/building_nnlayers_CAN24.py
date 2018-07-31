@@ -68,7 +68,10 @@ def build(input):
     #       "Layer Normalization" - (Submitted on 21 Jul 2016)
     # weights_initializer: we can also use 'weights_regularizer'
     #   weights_initializer=tf.contrib.layers.xavier_initializer() (default)
-    #   weights_initializer=tf.contrib.layer.variance_scaling_initializer() # He initialization.
+    #   weights_initializer=tf.contrib.layers.variance_scaling_initializer() # He initialization.
+    # You can also write:
+    # import tensorflow.contrib.layers as layers
+    #   weights_initializer=layers.variance_scaling_initializer() # He initialization.
     # Reguralizations:
     #   weights_regularizer=tf.contrib.layers.l1_regularizer
     #   weights_regularizer=slim.l1_regularizer(0.07)
