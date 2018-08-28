@@ -41,3 +41,22 @@ print(t)
 # list comprehension
 t=[x[1] for x in L]
 print(t)
+
+# Example: np.partition and np.argpartition 
+# Rearrange the array in such a way that the value in the k-th position
+# matches with a sorted version of the input array. The order of other elements
+# are not important.
+a=np.array([8,7,1,6,9,4])
+print("a = ",a)
+print(np.partition(a,3))
+print(np.partition(a,4))
+
+# similarly, we can get the array of indices for this task:
+indices=np.argpartition(a,4)
+print(a[indices])
+
+# we can use negative indices. let's get the last three elements:
+print("a[-3:] = ",a[-3:])
+# the following will put -3-th element in its correct position: 
+#   (Note the sorted array is [1,4,6,7,8,9]) 
+print(np.partition(a,-3))
