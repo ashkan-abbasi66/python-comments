@@ -1,8 +1,9 @@
 # my python comments
 This repo. contains useful python tips for me!
 <br>Implements\PythonCodes
+
 - [object oriented programing](#ood)
-- [imread & imshow](#imshow)
+- [Image Processing Operations](#dip_ops)
 - [Parsing command line arguments](#sysargv)
 - [Assert](#exception)
 - [Tensorflow](#tf)
@@ -10,12 +11,30 @@ This repo. contains useful python tips for me!
 - [Import Data or a module](#loadData)
 - [ToDo](#todo)
 
+
+
+## Miscellaneous comments
+
+[Quick guide for installing Python, Tensorflow, and PyCharm on Windows](https://medium.com/@ashkan.abbasi/quick-guide-for-installing-python-tensorflow-and-pycharm-on-windows-ed99ddd9598) - After installation, you may need to install some libraries. E.g., `pip install opencv-python pandas pillow jupyter matplotlib sklearn`
+
+[Cool Python Libs](https://github.com/maet3608/cool-python-libs)
+
+
+
 <a id="ood"></a>
+
 # object oriented programing
 simple examples based on Learn Python in One Day (2nd Edition) - page: 68<br> see `simple-object-oriented-example/main.ipynb`.
-<a id="imshow"></a>
-# imread & imshow
+<a id="dip_ops"></a>
+
+# Image Processing Operations
+- See `guide_image_basics_git.ipynb`: Reading and displaying an image is among the most frequently used operations. However, since there are various ways for doing them in Python, sometimes it is confusing!. In this guide, I will show you the most common ways. I am sure that this will save your time!. Also, there are other tips that might be useful. - matplotlib (Read and Display an image) - PIL (Read and Display an image; Save noisy image;resize;color space) - CV2 (Read and Display an image)
+- 
+
+## Imshow and Imread
+
 Using **cv2** <br>
+
 ```python
 import cv2
 import numpy as np
@@ -49,6 +68,7 @@ plt.show()
 ```
 Note: Unfortunately, the image is shown like a color image!. Use PIL for reading the image.<br>
 You can also define a function to show images using matplotlib:
+
 ```python
 def showImage(title,A):
     fig = plt.figure()
@@ -182,6 +202,7 @@ At this time, I don't know much about those files!<br>
 <a id="loadData"></a>
 # Import Data or a module
 `load_dataset.py`
+
 - load image pairs
 - load a random subset of patch pairs.<br>
 
@@ -192,7 +213,19 @@ from importlib.machinery import SourceFileLoader
 module_name = SourceFileLoader("module_name",module_path).load_module()
 
 ```
+
+
+
+
+**Load Numpy data**
+
+`np.load` and `np.save` => a platform-independent way of saving and loading a Numpy arrays
+
+
+
 <a id="todo"></a>
+
 # ToDo
+
 indexing and slicing techniques: `indexing.py`<br>
 
