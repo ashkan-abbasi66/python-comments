@@ -7,7 +7,8 @@ This repo. contains useful python tips for me!
 - [Parsing command line arguments](#sysargv)
 - [Assert](#exception)
 - [Tensorflow](#tf)
-    -  [Save model during training](#tf-saveModel)
+    - [Save model during training](#tf-saveModel)
+    - [Keras](#keras)
 - [Import Data or a module](#loadData)
 - [ToDo](#todo)
 
@@ -138,6 +139,7 @@ The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a 
 <a id="tf"></a>
 # Tensorflow
 Folder: `tf-example` <br>
+
 - number of parameters of tensorflow model [here](https://stackoverflow.com/questions/47310132/number-of-cnn-learnable-parameters-python-tensorflow)
 - compute receptive field of a network. [here](https://stackoverflow.com/questions/35582521/how-to-calculate-receptive-field-size)
 - tensorflow basics: `tf_basics.ipynb`<br>
@@ -199,7 +201,16 @@ for epoch in range(1,N_epochs):
 -  a file named `model.ckpt.meta`.
 At this time, I don't know much about those files!<br>
 
+
+
+## Keras<a id = "keras"></a>
+
+[Model - MiniGoogleLeNet](./tf-examples/keras_minigooglenet_functional.py)
+
+
+
 <a id="loadData"></a>
+
 # Import Data or a module
 `load_dataset.py`
 
