@@ -192,7 +192,7 @@ for epoch in range(1,N_epochs):
     -  some statistics about each epoch.
     -  obtained validation/test results during training.
     -  save the obtained model in that epoch.
-<br>
+    <br>
 2. What do they usually save using `saver.save(sess,path)`? 
 <br>
 -  a file named `checkpoint` (may contain CheckpointState proto). <br>
@@ -207,7 +207,7 @@ At this time, I don't know much about those files!<br>
 
 [Model - MiniGoogleLeNet](./tf-examples/keras_minigooglenet_functional.py)
 
-
+Search for Tf-KERAS-*
 
 <a id="loadData"></a>
 
