@@ -205,7 +205,9 @@ At this time, I don't know much about those files!<br>
 
 ## Keras<a id = "keras"></a>
 
-[Model - MiniGoogleLeNet](./tf-examples/keras_minigooglenet_functional.py)
+[Model - MiniGoogleLeNet](./tf-examples/model_tf_keras_minigooglenet_functional.py)
+
+[Model - Allconvnet or ALLCNN](./tf-examples/model_tf_keras_allconvnet_allcnn.py)
 
 Search for Tf-KERAS-*
 
