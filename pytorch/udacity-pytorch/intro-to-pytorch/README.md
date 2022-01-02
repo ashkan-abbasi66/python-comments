@@ -15,12 +15,5 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 
 # Notes
 
-[loss functions.ipynb](./loss functions.ipynb): Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`.
+[loss functions](./loss%20functions.ipynb): Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`.
 
-[loss functions](./loss functions.ipynb)
-
-[codes](./udacity-pytorch/intro-to-pytorch)
-
-[loss functions](./udacity-pytorch/intro-to-pytorch)
-
-[loss functions](./loss%20functions.ipynb)
