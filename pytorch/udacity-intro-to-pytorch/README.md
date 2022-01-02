@@ -23,3 +23,5 @@ batch normalization:
 
 - [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
 
+- [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
+
