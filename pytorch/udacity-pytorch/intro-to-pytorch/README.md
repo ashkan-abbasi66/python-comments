@@ -20,3 +20,5 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 [loss functions](./loss functions.ipynb)
 
 [codes](./udacity-pytorch/intro-to-pytorch)
+
+[loss functions](./udacity-pytorch/intro-to-pytorch)
