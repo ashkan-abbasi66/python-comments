@@ -12,3 +12,4 @@
 - [codes](./rasbt-intro-to-DL) (copied from [here](https://github.com/rasbt/stat453-deep-learning-ss21))
 - [A collection of various deep learning architectures, models, and tips](./https://github.com/rasbt/deeplearning-models)
 
+[Kickstart](https://github.com/ashkan-abbasi66/Kickstart) Study route for learners in machine learning / deep learning / computer vision
