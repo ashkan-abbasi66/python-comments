@@ -13,3 +13,20 @@
 - [A collection of various deep learning architectures, models, and tips](./https://github.com/rasbt/deeplearning-models)
 
 [Kickstart](https://github.com/ashkan-abbasi66/Kickstart) Study route for learners in machine learning / deep learning / computer vision
+
+
+
+# Supplementary
+
+[From Zero to Research Scientist full resources guide.](https://github.com/ahmedbahaaeldin/From-0-to-Research-Scientist-resources-guide) 
+
+Book - Introduction to Machine Learning with Python: A Guide for Data Scientists - by [Andreas Mueller](https://www.youtube.com/c/AndreasMueller) (Video) - Scikit Learn 
+
+[Yann LeCun’s Deep Learning Course at CDS](https://cds.nyu.edu/deep-learning/) 
+
+[Yann LeCun's Deep Learning Course (Spring 2020) at NYU](https://atcold.github.io/pytorch-Deep-Learning/) - (companion [Githob repository](https://github.com/Atcold/pytorch-Deep-Learning) with PyTorch Examples)
+
+[MIT 6.S191: Introduction to Deep Learning](https://www.youtube.com/watch?v=5tvmMX8r_OM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI) - MIT - by Alexander Amini and 
+
+
+
