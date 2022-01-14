@@ -40,4 +40,4 @@ Convolutional neural networks (CNNs):
   - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
 
 Optimization:
-  - [Unstable gradients (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
+  - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
