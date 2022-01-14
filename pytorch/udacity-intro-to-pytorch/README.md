@@ -32,3 +32,12 @@ Recurrent neural networks (RNNs) and long short-term memory (LSTM):
 - [Edwin Chen's LSTM post](http://blog.echen.me/2017/05/30/exploring-lstms/)
 - [Andrej Karpathy's blog post on RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 - [Andrej Karpathy's lecture on RNNs and LSTMs from CS231n](https://www.youtube.com/watch?v=iX5V1WpxxkY)
+
+Convolutional neural networks (CNNs):
+- Basics of convolution:
+  - [Kernels](https://setosa.io/ev/image-kernels/)
+- Benchmark different architectures:
+  - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
+
+Optimization:
+  - [Unstable gradients (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
