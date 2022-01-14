@@ -41,3 +41,13 @@ Convolutional neural networks (CNNs):
 
 Optimization:
   - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
+
+
+
+# Tools
+
+Keras:
+
+- [Introduction to Keras for engineers](https://keras.io/getting_started/intro_to_keras_for_engineers).
+- [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
+- [Official Code examples](https://keras.io/examples/)
