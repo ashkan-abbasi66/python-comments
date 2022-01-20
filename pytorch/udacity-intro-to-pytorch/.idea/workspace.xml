@@ -9,12 +9,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Part 4 - Fashion-MNIST.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -166,7 +166,7 @@
     <entry file="file://$PROJECT_DIR$/Part 4 - Fashion-MNIST.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

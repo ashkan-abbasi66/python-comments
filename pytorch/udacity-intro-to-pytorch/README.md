@@ -17,7 +17,15 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 
 [loss functions](./loss%20functions.ipynb): Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`.
 
-[autograd](./autograd.ipynb): 
+[autograd](./autograd.ipynb)
+
+[datasets](./datasets.ipynb)
+
+[data manipulation layers](./data manipulation layers.ipynb): max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
+
+[Tensorboard in PyTorch](./Tensorboard in PyTorch.ipynb) - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
+
+
 
 batch normalization:
 
@@ -42,16 +50,3 @@ Convolutional neural networks (CNNs):
 Optimization:
   - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
 
-
-
-# Tools
-
-PyTorch:
-
-- [PyTorch Tutorials](https://pytorch.org/tutorials/)
-
-Keras:
-
-- [Introduction to Keras for engineers](https://keras.io/getting_started/intro_to_keras_for_engineers).
-- [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
-- [Official Code examples](https://keras.io/examples/)

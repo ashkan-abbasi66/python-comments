@@ -18,15 +18,26 @@
 
 # Supplementary
 
-[From Zero to Research Scientist full resources guide.](https://github.com/ahmedbahaaeldin/From-0-to-Research-Scientist-resources-guide) 
+- [From Zero to Research Scientist full resources guide.](https://github.com/ahmedbahaaeldin/From-0-to-Research-Scientist-resources-guide) 
 
-Book - Introduction to Machine Learning with Python: A Guide for Data Scientists - by [Andreas Mueller](https://www.youtube.com/c/AndreasMueller) (Video) - Scikit Learn 
+- Book - Introduction to Machine Learning with Python: A Guide for Data Scientists - by [Andreas Mueller](https://www.youtube.com/c/AndreasMueller) (Video) - Scikit Learn 
 
-[Yann LeCun’s Deep Learning Course at CDS](https://cds.nyu.edu/deep-learning/) 
+- [Yann LeCun’s Deep Learning Course at CDS](https://cds.nyu.edu/deep-learning/) 
 
-[Yann LeCun's Deep Learning Course (Spring 2020) at NYU](https://atcold.github.io/pytorch-Deep-Learning/) - (companion [Githob repository](https://github.com/Atcold/pytorch-Deep-Learning) with PyTorch Examples)
+- [Yann LeCun's Deep Learning Course (Spring 2020) at NYU](https://atcold.github.io/pytorch-Deep-Learning/) - (companion [Githob repository](https://github.com/Atcold/pytorch-Deep-Learning) with PyTorch Examples)
 
-[MIT 6.S191: Introduction to Deep Learning](https://www.youtube.com/watch?v=5tvmMX8r_OM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI) - MIT - by Alexander Amini and 
+- [MIT 6.S191: Introduction to Deep Learning](https://www.youtube.com/watch?v=5tvmMX8r_OM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI) - MIT - by Alexander Amini and 
 
 
+
+PyTorch:
+
+- [PyTorch Tutorials](https://pytorch.org/tutorials/)
+  - [PyTorch Beginner Series](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
+
+Keras:
+
+- [Introduction to Keras for engineers](https://keras.io/getting_started/intro_to_keras_for_engineers).
+- [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
+- [Official Code examples](https://keras.io/examples/)
 
