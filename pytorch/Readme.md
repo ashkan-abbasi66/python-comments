@@ -41,3 +41,7 @@ Keras:
 - [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
 - [Official Code examples](https://keras.io/examples/)
 
+
+
+- [A resource for learning about ML, DL, PyTorch and TensorFlow](https://github.com/aladdinpersson/Machine-Learning-Collection) - Video
+
