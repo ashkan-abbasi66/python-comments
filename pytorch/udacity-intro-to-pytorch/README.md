@@ -46,6 +46,10 @@ Optimization:
 
 # Tools
 
+PyTorch:
+
+- [PyTorch Tutorials](https://pytorch.org/tutorials/)
+
 Keras:
 
 - [Introduction to Keras for engineers](https://keras.io/getting_started/intro_to_keras_for_engineers).
