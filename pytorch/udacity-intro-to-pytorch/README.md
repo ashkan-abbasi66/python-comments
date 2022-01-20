@@ -21,9 +21,9 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 
 [datasets](./datasets.ipynb)
 
-[data manipulation layers](./data manipulation layers.ipynb): max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
+[data manipulation layers](./data%20manipulation%20layers.ipynb): max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
 
-[Tensorboard in PyTorch](./Tensorboard in PyTorch.ipynb) - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
+[Tensorboard in PyTorch](./Tensorboard%20in%20PyTorch.ipynb) - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
 
 
