@@ -28,7 +28,7 @@
 
 - [MIT 6.S191: Introduction to Deep Learning](https://www.youtube.com/watch?v=5tvmMX8r_OM&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI) - MIT - by Alexander Amini and 
 
-
+- [A resource for learning about ML, DL, PyTorch and TensorFlow](https://github.com/aladdinpersson/Machine-Learning-Collection) - Video
 
 PyTorch:
 
@@ -41,7 +41,4 @@ Keras:
 - [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
 - [Official Code examples](https://keras.io/examples/)
 
-
-
-- [A resource for learning about ML, DL, PyTorch and TensorFlow](https://github.com/aladdinpersson/Machine-Learning-Collection) - Video
 
