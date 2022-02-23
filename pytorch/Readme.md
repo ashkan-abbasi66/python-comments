@@ -10,7 +10,7 @@
 [Sebastian Raschka/introduction to deep learning](https://sebastianraschka.com/blog/2021/dl-course.html) - [video lectures](https://www.youtube.com/watch?v=1nqCZqDYPp0&list=PLTKMiZHVd_2KJtIXOW0zFhFfBaJJilH51)
 
 - [codes](./rasbt-intro-to-DL) (copied from [here](https://github.com/rasbt/stat453-deep-learning-ss21))
-- [A collection of various deep learning architectures, models, and tips](./https://github.com/rasbt/deeplearning-models)
+- [A collection of various deep learning architectures, models, and tips](https://github.com/rasbt/deeplearning-models)
 
 [Kickstart](https://github.com/ashkan-abbasi66/Kickstart) Study route for learners in machine learning / deep learning / computer vision
 
@@ -40,5 +40,4 @@ Keras:
 - [Introduction to Keras for engineers](https://keras.io/getting_started/intro_to_keras_for_engineers).
 - [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
 - [Official Code examples](https://keras.io/examples/)
-
 
