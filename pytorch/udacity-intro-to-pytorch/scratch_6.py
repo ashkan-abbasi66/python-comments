@@ -1,3 +1,10 @@
+"""
+Difference between nn.ModuleList() and python's simple list
+
+"If you use a plain python list, the parameters won’t be registered
+properly and you can’t pass them to your optimizer using model.parameters()."
+"""
+
 import numpy as np
 import torch as tr
 import torch.nn as nn
