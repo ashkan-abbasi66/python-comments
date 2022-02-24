@@ -12,13 +12,17 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
   * [An example in Keras](https://github.com/christianversloot/machine-learning-articles/blob/main/how-to-use-dropout-with-keras.md) - [Example 2 in Keras](./assets/Dropout_Example.pdf)
   * **[CIFAR10; Dropout with different drop rates in practice](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)**
 * **Part 6:** How to save and load trained models
-* **CNN:** CIFAR10 dataset; `cnn-cifar/cifar10_cnn_solution.ipynb`
+* **CNN:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_solution.ipynb`
 * **Part 7:** Load image data with `torchvision`, also data augmentation
-* **CNN w/ data augmentation:** CIFAR10 dataset; `cnn-cifar/cifar10_cnn_augmentation.ipynb`
+* **CNN w/ data augmentation:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_augmentation.ipynb`
 * **Part 8:** Use transfer learning to train a state-of-the-art image classifier for dogs and cats
 
-* **Weight Initialization:** All zeros/ones; Uniform/Normal distributions.
+* **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
   * More on weight initialization: [link 1](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html#How-to-find-appropriate-initialization-values); [link 2](https://www.askpython.com/python-modules/initialize-model-weights-pytorch)
+
+* **Batch normalization**: `batch-norm` folder; 
+  * [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
+  * [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
 
 
 
@@ -44,14 +48,6 @@ Todo
 [Tensorboard in PyTorch](./Tensorboard%20in%20PyTorch.ipynb) - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
 
-
-batch normalization:
-
-- `batch-norm` folder
-
-- [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
-
-- [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
 
 Recurrent neural networks (RNNs) and long short-term memory (LSTM):
 - [Chris Olah's LSTM post](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
