@@ -12,12 +12,12 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
   * [An example in Keras](https://github.com/christianversloot/machine-learning-articles/blob/main/how-to-use-dropout-with-keras.md) - [Example 2 in Keras](./assets/Dropout_Example.pdf)
   * **[CIFAR10; Dropout with different drop rates in practice](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)**
 * **Part 6:** How to save and load trained models
-* **CNN: ** CIFAR10 dataset; `cnn-cifar/cifar10_cnn_solution.ipynb`
+* **CNN:** CIFAR10 dataset; `cnn-cifar/cifar10_cnn_solution.ipynb`
 * **Part 7:** Load image data with `torchvision`, also data augmentation
-* **CNN w/ data augmentation: **CIFAR10 dataset; `cnn-cifar/cifar10_cnn_augmentation.ipynb`
+* **CNN w/ data augmentation:**CIFAR10 dataset; `cnn-cifar/cifar10_cnn_augmentation.ipynb`
 * **Part 8:** Use transfer learning to train a state-of-the-art image classifier for dogs and cats
 
-* **Weight Initialization: ** All zeros/ones; Uniform/Normal distributions.
+* **Weight Initialization:** All zeros/ones; Uniform/Normal distributions.
   * More on weight initialization: [link 1](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html#How-to-find-appropriate-initialization-values); [link 2](https://www.askpython.com/python-modules/initialize-model-weights-pytorch)
 
 
