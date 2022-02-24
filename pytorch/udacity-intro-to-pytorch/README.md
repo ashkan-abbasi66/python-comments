@@ -14,7 +14,7 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 * **Part 6:** How to save and load trained models
 * **CNN:** CIFAR10 dataset; `cnn-cifar/cifar10_cnn_solution.ipynb`
 * **Part 7:** Load image data with `torchvision`, also data augmentation
-* **CNN w/ data augmentation:**CIFAR10 dataset; `cnn-cifar/cifar10_cnn_augmentation.ipynb`
+* **CNN w/ data augmentation:** CIFAR10 dataset; `cnn-cifar/cifar10_cnn_augmentation.ipynb`
 * **Part 8:** Use transfer learning to train a state-of-the-art image classifier for dogs and cats
 
 * **Weight Initialization:** All zeros/ones; Uniform/Normal distributions.
