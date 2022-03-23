@@ -1,7 +1,5 @@
 # Deep Learning with PyTorch
 
-This repo contains notebooks and related code for Udacity's Deep Learning with PyTorch lesson. This lesson appears in our [AI Programming with Python Nanodegree program](https://www.udacity.com/course/ai-programming-python-nanodegree--nd089).
-
 * **Part 1:** Introduction to PyTorch and using tensors
 * **Part 2:** Building fully-connected neural networks with PyTorch
 * **Part 3:** How to train a fully-connected network with backpropagation on MNIST
@@ -15,11 +13,10 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 * **CNN:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_solution.ipynb`
 * **Part 7:** Load image data with `torchvision`, also data augmentation
 * **CNN w/ data augmentation:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_augmentation.ipynb`
+  * test it w/o augmentation on the validation and test sets.
 * **Part 8:** Use transfer learning to train a state-of-the-art image classifier for dogs and cats
-
 * **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
   * More on weight initialization: [link 1](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html#How-to-find-appropriate-initialization-values); [link 2](https://www.askpython.com/python-modules/initialize-model-weights-pytorch)
-
 * **Batch normalization**: `batch-norm` folder; 
   * [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
   * [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
@@ -28,8 +25,10 @@ This repo contains notebooks and related code for Udacity's Deep Learning with P
 
 # Notes
 
-Todo
+**Todo**
 
+- [ ] new CNN examples `cifar10_cnn` and `cifar10_cnn_augmentation`
+- [ ] Tokenization - TEXT analysis.
 - [ ] 
 - [x] CNN examples (MNIST; [Plain CNN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-basic.ipynb); [CNN w/ He initialization](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-he-init.ipynb))
 - [x] Implement different initialization methods in PyTorch 
@@ -56,10 +55,8 @@ Recurrent neural networks (RNNs) and long short-term memory (LSTM):
 - [Andrej Karpathy's lecture on RNNs and LSTMs from CS231n](https://www.youtube.com/watch?v=iX5V1WpxxkY)
 
 Convolutional neural networks (CNNs):
-- Basics of convolution:
-  - [Kernels](https://setosa.io/ev/image-kernels/)
-- Benchmark different architectures:
-  - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
+- [Kernels](https://setosa.io/ev/image-kernels/)
+- [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
 
 Optimization:
   - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)

@@ -16,6 +16,14 @@
 
 
 
+Textbooks:
+
+- Hands-On Machine Learning
+- Eli Stevens -Deep Learning with PyTorch
+- [D2L](https://d2l.ai/index.html)
+
+
+
 # Supplementary
 
 - [From Zero to Research Scientist full resources guide.](https://github.com/ahmedbahaaeldin/From-0-to-Research-Scientist-resources-guide) 
@@ -33,11 +41,11 @@
 PyTorch:
 
 - [PyTorch Tutorials](https://pytorch.org/tutorials/)
-  - [PyTorch Beginner Series](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
+  - **[Github repo.](https://github.com/pytorch/tutorials)**: [beginner_source](https://github.com/pytorch/tutorials/tree/master/beginner_source); [intermediate_source](https://github.com/pytorch/tutorials/tree/master/intermediate_source); [advanced_source](https://github.com/pytorch/tutorials/tree/master/advanced_source); [recipes_source](https://github.com/pytorch/tutorials/tree/master/recipes_source))
+  - [PyTorch Beginner Series Video](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN)
 
 Keras:
 
 - [Introduction to Keras for engineers](https://keras.io/getting_started/intro_to_keras_for_engineers).
 - [Introduction to Keras for researchers](https://keras.io/getting_started/intro_to_keras_for_researchers)
 - [Official Code examples](https://keras.io/examples/)
-
