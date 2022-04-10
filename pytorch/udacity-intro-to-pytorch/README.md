@@ -36,28 +36,53 @@
 
 
 
-[loss functions](./loss%20functions.ipynb): Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
+**[loss functions](./loss%20functions.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
 
-[autograd](./autograd.ipynb)
+**[autograd](./autograd.ipynb)**
 
-[datasets](./datasets.ipynb)
+**[datasets](./datasets.ipynb)**
 
-[data manipulation layers](./data%20manipulation%20layers.ipynb): max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
+**[data manipulation layers](./data%20manipulation%20layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
 
-[Tensorboard in PyTorch](./Tensorboard%20in%20PyTorch.ipynb) - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
+**[Tensorboard in PyTorch](./Tensorboard%20in%20PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
+```python
+from tensorboardX import SummaryWriter
+writer = SummaryWriter(log_dir=os.path.join(output_root, 'Tensorboard_Results'))
 
+# Main Training Loop of your program
+total_loss = []
+global iteration
 
-Recurrent neural networks (RNNs) and long short-term memory (LSTM):
+model.train()
+for batch_idx, (inputs, targets) in enumerate(train_loader):
+	optimizer.zero_grad()
+    outputs = model(inputs.to(device))
+    loss = criterion(outputs, targets)
+    
+    total_loss.append(loss.item())
+    
+    writer.add_scalar('train_loss_logs', loss.item(), iteration)
+    
+    iteration += 1
+    
+    loss.backward()
+    optimizer.step()
+
+epoch_loss = sum(total_loss)/len(total_loss)
+
+```
+
+**Recurrent neural networks (RNNs) and long short-term memory (LSTM)**:
 - [Chris Olah's LSTM post](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 - [Edwin Chen's LSTM post](http://blog.echen.me/2017/05/30/exploring-lstms/)
 - [Andrej Karpathy's blog post on RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 - [Andrej Karpathy's lecture on RNNs and LSTMs from CS231n](https://www.youtube.com/watch?v=iX5V1WpxxkY)
 
-Convolutional neural networks (CNNs):
+**Convolutional neural networks (CNNs)**:
 - [Kernels](https://setosa.io/ev/image-kernels/)
 - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
 
-Optimization:
+**Optimization**:
   - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
 
