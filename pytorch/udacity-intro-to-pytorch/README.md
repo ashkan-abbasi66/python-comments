@@ -72,6 +72,8 @@ for batch_idx, (inputs, targets) in enumerate(train_loader):
 epoch_loss = sum(total_loss)/len(total_loss)
 
 ```
+Usage: ` tensorboard --logdir="./output/nodulemnist3d/220410_122404/Tensorboard_Results/"`
+
 
 **Recurrent neural networks (RNNs) and long short-term memory (LSTM)**:
 - [Chris Olah's LSTM post](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
