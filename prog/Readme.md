@@ -2,7 +2,7 @@
 
 
 
-[Practical Python Course](./dabeaz/)
+**[Practical Python Course](./dabeaz/)**
 
 [Udemy-bootcamp](./udemy-bootcamp)
 
