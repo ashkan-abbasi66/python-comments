@@ -17,7 +17,7 @@
 * **Part 8:** Leverage the power of pretrained state-of-the-art image classifiers for your own dataset.
   * cats and dogs dataset.
   * [`./transfer-learning`](./transfer-learning): flowers dataset
-* **Autoencoders**: [`./autoencoders/`](./autoencoders)
+* **Autoencoder**: [`./autoencoder/`](./autoencoder)
   * Linear autoencoders
   * Convolutional autoencoders
   * Denoising autoencoders
