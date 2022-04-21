@@ -11,10 +11,18 @@
   * **[CIFAR10; Dropout with different drop rates in practice](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)**
 * **Part 6:** How to save and load trained models
 * **CNN:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_solution.ipynb`
-* **Part 7:** Load image data with `torchvision`, also data augmentation
+* **Part 7:** Load image data with `torchvision` + data augmentation
 * **CNN w/ data augmentation:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_augmentation.ipynb`
   * test it w/o augmentation on the validation and test sets.
-* **Part 8:** Use transfer learning to train a state-of-the-art image classifier for dogs and cats
+* **Part 8:** Leverage the power of pretrained state-of-the-art image classifiers for your own dataset.
+  * cats and dogs dataset.
+  * [`./transfer-learning`](`./transfer-learning`): flowers dataset
+* **Autoencoders**: [`./autoencoders/`](`./autoencoders/`)
+  * Linear autoencoders
+  * Convolutional autoencoders
+  * Denoising autoencoders
+
+---------------------------
 * **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
   * More on weight initialization: [link 1](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html#How-to-find-appropriate-initialization-values); [link 2](https://www.askpython.com/python-modules/initialize-model-weights-pytorch)
 * **Batch normalization**: `batch-norm` folder; 
