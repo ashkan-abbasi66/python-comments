@@ -15,6 +15,8 @@ Textbooks:
 
 
 # Misc. Notes
+- [Formatted output tutorial](https://python-course.eu/python-tutorial/formatted-output.php)
+
 - In contrast to `Dict()`, `OrderedDict()` preserves the order in which the keys are inserted. (matters when iterating on it)
 
 - Set priority of a process

@@ -80,10 +80,16 @@ Usage: ` tensorboard --logdir="./output/nodulemnist3d/220410_122404/Tensorboard_
 - [Edwin Chen's LSTM post](http://blog.echen.me/2017/05/30/exploring-lstms/)
 - [Andrej Karpathy's blog post on RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 - [Andrej Karpathy's lecture on RNNs and LSTMs from CS231n](https://www.youtube.com/watch?v=iX5V1WpxxkY)
+- [MIT 6.S191 (2021): Recurrent Neural Networks](https://www.youtube.com/watch?v=qjrad0V0uJE)
 
 **Convolutional neural networks (CNNs)**:
 - [Kernels](https://setosa.io/ev/image-kernels/)
 - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
+- [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU)
+- [MIT 6.S191 (2021): Convolutional Neural Networks](https://www.youtube.com/watch?v=AjtX1N_VT9E)
+
+**Transfer Learning**:
+- [Transfer Learning (C3W2L07) by Andrew Ng](https://www.youtube.com/watch?v=yofjFQddwHE)
 
 **Optimization**:
   - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
