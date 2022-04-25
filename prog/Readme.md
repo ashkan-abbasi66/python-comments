@@ -15,7 +15,38 @@ Textbooks:
 
 
 # Misc. Notes
+- **Python Sequences (Sequence objects)**: 
+	- They are ordered.
+	- There are 6 types: string (group of characters inside `""` or `''`), list, tuple, byte sequence, byte array, and range object.
+	- immutable sequences: 
+		- string => `name='abc', name[0]='d' #error`
+		- tuple
+		- `bytes()`
+		```python
+        size = 10
+        b = bytes(size), print( b )
+        print(bytes(“Hey”, ‘utf=8’))
+        ```
+	- mutable sequences:
+		- list
+		- `bytearray()`
+		`print( bytearray([1, 2, 3, 4]) )`
+
+	- supported operators: +(concatenation), *(repeat), membership(`in`), slicing
+	- supported functions: `len()`, `min() & max()`, `index()`, `count()`, 
+
 - [Formatted output tutorial](https://python-course.eu/python-tutorial/formatted-output.php)
+
+- **Python Collections**: unordered and unindexed data structures
+	- sets and dictionaries are python collections. They are both mutable (you can add, remove, update). But do note that keys in a dictionary is not mutable. 
+	- sets
+	```python
+    setA = {1,2,3,4,5,4}
+    setB = set({10,20,30,20,30})
+    setC = set() # {}
+    
+    ```
+    	- sets cannot contain sets, lists, and dictionaries.
 
 - In contrast to `Dict()`, `OrderedDict()` preserves the order in which the keys are inserted. (matters when iterating on it)
 
@@ -33,6 +64,8 @@ pid = win32api.GetCurrentProcessId()
 handle = win32api.OpenProcess(win32con.PROCESS_ALL_ACCESS, True, pid)
 win32process.SetPriorityClass(handle, win32process.HIGH_PRIORITY_CLASS)
 ```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you want to use `REALTIME_PRIORITY_CLASS`, check [here](https://stackoverflow.com/questions/44049685/how-to-set-real-time-priority-with-psutil).
 
 - [Quick guide for installing Python, Tensorflow, and PyCharm on Windows](https://medium.com/@ashkan.abbasi/quick-guide-for-installing-python-tensorflow-and-pycharm-on-windows-ed99ddd9598) - After installation, you may need to install some libraries. E.g., `pip install opencv-python pandas pillow jupyter matplotlib sklearn`
 
