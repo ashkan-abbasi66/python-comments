@@ -3,17 +3,17 @@ import os
 import numpy as np
 
 
-def print_exif(img):
-    # Found at
-    # https://stackoverflow.com/questions/4764932/in-python-how-do-i-read-the-exif-data-for-an-image
-
-    img_exif = img.getexif()
-
-    if img_exif is None:
-        print('Sorry, image has no exif data.')
-    else:
-        for key, val in img_exif.items():
-            print(key, val)
+# def print_exif(img):
+#     # Found at
+#     # https://stackoverflow.com/questions/4764932/in-python-how-do-i-read-the-exif-data-for-an-image
+#
+#     img_exif = img.getexif()
+#
+#     if img_exif is None:
+#         print('Sorry, image has no exif data.')
+#     else:
+#         for key, val in img_exif.items():
+#             print(key, val)
                 
 def copy_files(input_dir, output_dir):
     """
@@ -42,13 +42,6 @@ def copy_files(input_dir, output_dir):
         #     print(outpath)
         # else:
         #     print(input_dir + file, " is not a .jpg file.")
-
-# def copy_raw_data(input_dir, output_dir):
-#     """
-#     Images ==> PIL read ==>
-#
-#     """
-#     pass
 
 # MAIN PROGRAM
 # input_dir = './data/'
