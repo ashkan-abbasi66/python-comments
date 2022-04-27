@@ -98,6 +98,14 @@ Remove metadata or EXIF - 2nd way
 """
 
 def copy_pixel_only(img_path, new_name):
+    """
+
+    Usage:
+        img_path = r'./data/image_baby.jpg'
+        new_name = 'image_baby_noExif.jpg'
+        copy_pixel_only(img_path, new_name)
+    """
+
     img = Image.open(img_path)
     img_np = np.uint8(np.asarray(img))
     img2 = Image.fromarray(img_np).convert('RGB')
@@ -109,9 +117,9 @@ def copy_pixel_only(img_path, new_name):
     img2.save(new_fpath)
     return new_fpath
 
-img_path = r'./data/image_baby.jpg'
-new_name = 'image_baby_noExif.jpg'
-copy_pixel_only(img_path, new_name)
+# img_path = r'./data/image_baby.jpg'
+# new_name = 'image_baby_noExif.jpg'
+# copy_pixel_only(img_path, new_name)
 
 # img = Image.open(r'./data/image_baby.jpg') # PIL object ==>
 # print(type(img)) # <class 'PIL.JpegImagePlugin.JpegImageFile'> ==> data + functions

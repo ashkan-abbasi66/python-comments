@@ -1,0 +1,8 @@
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\1400.tif,1
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\1400_Copy.jpg,6
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\1400_small.jpg,4
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\baby2.png,1
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\bird.png,1
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\constant_image.jpg,4
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\constant_image_rgb_Copy.jpg,6
+E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\data\test.txt,1
