@@ -6,6 +6,8 @@
 
 [Udemy-bootcamp](./udemy-bootcamp)
 
+[JKU-Programming in Python for Machine Learning](https://github.com/widmi/programming-in-python)
+
 
 Textbooks:
 

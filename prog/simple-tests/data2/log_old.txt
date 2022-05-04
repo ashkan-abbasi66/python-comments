@@ -1,0 +1,9 @@
+400.tif;1
+400_Copy.jpg;6
+400_small.jpg;4
+aby2.png;1
+ird.png;1
+onstant_image.jpg;4
+onstant_image_rgb.jpg;5
+onstant_image_rgb_Copy.jpg;5
+est.txt;1

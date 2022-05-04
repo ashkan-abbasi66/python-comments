@@ -13,7 +13,7 @@ dirs = os.listdir('./data') # relative path
 for e in dirs:
     print(e)
     if e == 'baby.png':
-        os.rename('./data/baby.png', './data/baby2.png')
+        os.rename('data/dir0_noJPG/baby.png', './data/baby2.png')
 
 print('line 1') # \n
 print('line 2')
