@@ -7,7 +7,9 @@
 - **[codes](./udacity-intro-to-pytorch)** - [Main Entry]
 - [other materials](./udacity-pytorch)
 
-[UvA Deep Learning Course](http://uvadlc.github.io/)
+Use PyTorch in **multiple domains** speech, CV, and NLP => [PyTorch Fundamentals](https://docs.microsoft.com/en-us/learn/paths/pytorch-fundamentals/) by Microsoft.
+
+**[UvA Deep Learning Course](http://uvadlc.github.io/)**
 - [Jupyter notebook website](https://uvadlc-notebooks.readthedocs.io/en/latest/index.html); [Github](https://github.com/phlippe/uvadlc_notebooks); [assignemts](https://github.com/phlippe/uvadlc_notebooks)
 - [Tutorial recordings](https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA)
 
@@ -24,7 +26,7 @@ Textbooks:
 
 - Hands-On Machine Learning
 - Eli Stevens -Deep Learning with PyTorch
-- [D2L](https://d2l.ai/index.html)
+- **[D2L](https://d2l.ai/index.html)**
 
 
 

@@ -48,7 +48,7 @@
 
 **[autograd](./autograd.ipynb)**
 
-**[datasets](./datasets.ipynb)**
+**[guide_datasets_1](./guide_datasets_1.ipynb)**
 
 **[data manipulation layers](./data%20manipulation%20layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
 
