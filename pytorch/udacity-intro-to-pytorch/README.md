@@ -21,6 +21,7 @@
   * Linear autoencoders
   * Convolutional autoencoders
   * Denoising autoencoders
+* **RNN**: `./rnn/`
 
 ---------------------------
 * **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
@@ -81,14 +82,6 @@ epoch_loss = sum(total_loss)/len(total_loss)
 
 ```
 Usage: ` tensorboard --logdir="./output/nodulemnist3d/220410_122404/Tensorboard_Results/"`
-
-
-**Recurrent neural networks (RNNs) and long short-term memory (LSTM)**:
-- [Chris Olah's LSTM post](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-- [Edwin Chen's LSTM post](http://blog.echen.me/2017/05/30/exploring-lstms/)
-- [Andrej Karpathy's blog post on RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
-- [Andrej Karpathy's lecture on RNNs and LSTMs from CS231n](https://www.youtube.com/watch?v=iX5V1WpxxkY)
-- [MIT 6.S191 (2021): Recurrent Neural Networks](https://www.youtube.com/watch?v=qjrad0V0uJE)
 
 **Convolutional neural networks (CNNs)**:
 - [Kernels](https://setosa.io/ev/image-kernels/)

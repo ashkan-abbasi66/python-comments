@@ -1,0 +1,108 @@
+C:\Users\ashkan\Anaconda3\envs\py36torch11\python.exe E:/POSTDOC/GITHUB/python-comments/pytorch/udacity-intro-to-pytorch/rnn/rnn.py
+Nunez
+Bohler
+Number of languages:  18
+['Abana', 'Abano', 'Abarca', 'Abaroa', 'Abascal']
+one-hot code for one letter:  tensor([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.,
+         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0., 0.]])
+torch.Size([5, 1, 57])
+Process each character ...
+	 Korean
+	 Korean
+	 Italian
+	 Czech
+	 Italian
+Italian
+In category Arabic, 1600 out of 2000 are used for training.
+In category Chinese, 214 out of 268 are used for training.
+In category Czech, 415 out of 519 are used for training.
+In category Dutch, 237 out of 297 are used for training.
+In category English, 2934 out of 3668 are used for training.
+In category French, 221 out of 277 are used for training.
+In category German, 579 out of 724 are used for training.
+In category Greek, 162 out of 203 are used for training.
+In category Irish, 185 out of 232 are used for training.
+In category Italian, 567 out of 709 are used for training.
+In category Japanese, 792 out of 991 are used for training.
+In category Korean, 75 out of 94 are used for training.
+In category Polish, 111 out of 139 are used for training.
+In category Portuguese, 59 out of 74 are used for training.
+In category Russian, 7526 out of 9408 are used for training.
+In category Scottish, 80 out of 100 are used for training.
+In category Spanish, 238 out of 298 are used for training.
+In category Vietnamese, 58 out of 73 are used for training.
+Training ...
+5000/100000 - loss=2.4092 - valid. data = Elliott (English) CORRECT
+10000/100000 - loss=2.7574 - valid. data = Diarmaid (Japanese) WRONG (Irish)
+15000/100000 - loss=2.8451 - valid. data = Pear (German) WRONG (Czech)
+20000/100000 - loss=3.2177 - valid. data = Oshin (Russian) WRONG (Japanese)
+25000/100000 - loss=2.5417 - valid. data = Zipperer (German) WRONG (Czech)
+30000/100000 - loss=1.8022 - valid. data = Shuai (Arabic) WRONG (Chinese)
+35000/100000 - loss=2.3752 - valid. data = Morrison (Scottish) WRONG (English)
+40000/100000 - loss=2.6118 - valid. data = Moschella (Spanish) WRONG (Italian)
+45000/100000 - loss=0.6348 - valid. data = Cong (Chinese) CORRECT
+50000/100000 - loss=0.2102 - valid. data = Milionis (Greek) CORRECT
+55000/100000 - loss=0.8947 - valid. data = Villa (Spanish) CORRECT
+60000/100000 - loss=1.9041 - valid. data = Macha (Japanese) WRONG (Czech)
+65000/100000 - loss=0.5727 - valid. data = Jager (German) CORRECT
+70000/100000 - loss=2.0209 - valid. data = Agenosoff (Dutch) WRONG (Russian)
+75000/100000 - loss=0.2327 - valid. data = Mitchell (Scottish) CORRECT
+80000/100000 - loss=0.5084 - valid. data = Phi (Vietnamese) CORRECT
+85000/100000 - loss=2.3376 - valid. data = Daniel (Spanish) WRONG (English)
+90000/100000 - loss=1.7325 - valid. data = Chang (Korean) WRONG (Chinese)
+95000/100000 - loss=1.6007 - valid. data = Abbatantuono (Spanish) WRONG (Italian)
+100000/100000 - loss=2.1694 - valid. data = Foden (Dutch) WRONG (English)
+Category Arabic; Test accuracy = 0.5639097744360902
+Category Chinese; Test accuracy = 0.5471698113207547
+Category Czech; Test accuracy = 0.39805825242718446
+Category Dutch; Test accuracy = 0.288135593220339
+Category English; Test accuracy = 0.19918144611186903
+Category French; Test accuracy = 0.14545454545454545
+Category German; Test accuracy = 0.5763888888888888
+Category Greek; Test accuracy = 0.6
+Category Irish; Test accuracy = 0.34782608695652173
+Category Italian; Test accuracy = 0.524822695035461
+Category Japanese; Test accuracy = 0.7525252525252525
+Category Korean; Test accuracy = 0.6111111111111112
+Category Polish; Test accuracy = 0.4444444444444444
+Category Portuguese; Test accuracy = 0.21428571428571427
+Category Russian; Test accuracy = 0.7065390749601276
+Category Scottish; Test accuracy = 0.15789473684210525
+Category Spanish; Test accuracy = 0.2542372881355932
+Category Vietnamese; Test accuracy = 0.5
+===> Overall accuracy = 0.5475893080189858
+Input:ashkan
+Russian
+Input:neda
+Spanish
+Input:ahmad
+Arabic
+Input:taha
+Japanese
+Input:akbar
+Czech
+Input:asghar
+Scottish
+Input:jimmy
+Czech
+Input:satoshi
+Italian
+Input:hiroshi
+Japanese
+Input:ishikawa
+Japanese
+Input:Sinbad
+Arabic
+Input:ali
+Italian
+Input:mohammad
+Russian
+Input:muhammad
+Czech
+Input:muhamad
+Arabic
+Input:mohamad
+Czech
+Input:

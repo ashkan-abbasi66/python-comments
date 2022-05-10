@@ -1,0 +1,74 @@
+Nunez
+Bohler
+Number of languages:  18
+['Abana', 'Abano', 'Abarca', 'Abaroa', 'Abascal']
+one-hot code for one letter:  tensor([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.,
+         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0., 0.]])
+torch.Size([5, 1, 57])
+Process each character ...
+	 Japanese
+	 Japanese
+	 Japanese
+	 Russian
+	 Scottish
+Scottish
+In category Arabic, 1600 out of 2000 are used for training.
+In category Chinese, 214 out of 268 are used for training.
+In category Czech, 415 out of 519 are used for training.
+In category Dutch, 237 out of 297 are used for training.
+In category English, 2934 out of 3668 are used for training.
+In category French, 221 out of 277 are used for training.
+In category German, 579 out of 724 are used for training.
+In category Greek, 162 out of 203 are used for training.
+In category Irish, 185 out of 232 are used for training.
+In category Italian, 567 out of 709 are used for training.
+In category Japanese, 792 out of 991 are used for training.
+In category Korean, 75 out of 94 are used for training.
+In category Polish, 111 out of 139 are used for training.
+In category Portuguese, 59 out of 74 are used for training.
+In category Russian, 7526 out of 9408 are used for training.
+In category Scottish, 80 out of 100 are used for training.
+In category Spanish, 238 out of 298 are used for training.
+In category Vietnamese, 58 out of 73 are used for training.
+Training ...
+5000/100000 - loss=2.6280 - valid. data = Elliott (German) WRONG (English)
+10000/100000 - loss=2.6702 - valid. data = Diarmaid (Japanese) WRONG (Irish)
+15000/100000 - loss=3.0629 - valid. data = Pear (Chinese) WRONG (Czech)
+20000/100000 - loss=3.3121 - valid. data = Oshin (Korean) WRONG (Japanese)
+25000/100000 - loss=2.5327 - valid. data = Zipperer (German) WRONG (Czech)
+30000/100000 - loss=1.5153 - valid. data = Shuai (Arabic) WRONG (Chinese)
+35000/100000 - loss=1.8892 - valid. data = Morrison (Russian) WRONG (English)
+40000/100000 - loss=2.4270 - valid. data = Moschella (Spanish) WRONG (Italian)
+45000/100000 - loss=0.6877 - valid. data = Cong (Chinese) CORRECT
+50000/100000 - loss=0.4641 - valid. data = Milionis (Greek) CORRECT
+55000/100000 - loss=0.9102 - valid. data = Villa (Spanish) CORRECT
+60000/100000 - loss=2.3666 - valid. data = Macha (Japanese) WRONG (Czech)
+65000/100000 - loss=0.6807 - valid. data = Jager (German) CORRECT
+70000/100000 - loss=1.4919 - valid. data = Agenosoff (Russian) CORRECT
+75000/100000 - loss=0.3857 - valid. data = Mitchell (Scottish) CORRECT
+80000/100000 - loss=0.5576 - valid. data = Phi (Vietnamese) CORRECT
+85000/100000 - loss=2.4559 - valid. data = Daniel (French) WRONG (English)
+90000/100000 - loss=1.4127 - valid. data = Chang (Korean) WRONG (Chinese)
+95000/100000 - loss=1.3942 - valid. data = Abbatantuono (Russian) WRONG (Italian)
+100000/100000 - loss=2.0901 - valid. data = Foden (Dutch) WRONG (English)
+Category Arabic; Test accuracy = 0.5989974937343359
+Category Chinese; Test accuracy = 0.5660377358490566
+Category Czech; Test accuracy = 0.3592233009708738
+Category Dutch; Test accuracy = 0.3220338983050847
+Category English; Test accuracy = 0.20054570259208732
+Category French; Test accuracy = 0.12727272727272726
+Category German; Test accuracy = 0.6111111111111112
+Category Greek; Test accuracy = 0.575
+Category Irish; Test accuracy = 0.2826086956521739
+Category Italian; Test accuracy = 0.524822695035461
+Category Japanese; Test accuracy = 0.7474747474747475
+Category Korean; Test accuracy = 0.7222222222222222
+Category Polish; Test accuracy = 0.48148148148148145
+Category Portuguese; Test accuracy = 0.21428571428571427
+Category Russian; Test accuracy = 0.6762360446570973
+Category Scottish; Test accuracy = 0.15789473684210525
+Category Spanish; Test accuracy = 0.3050847457627119
+Category Vietnamese; Test accuracy = 0.5714285714285714
+===> Overall accuracy = 0.5383462403197602

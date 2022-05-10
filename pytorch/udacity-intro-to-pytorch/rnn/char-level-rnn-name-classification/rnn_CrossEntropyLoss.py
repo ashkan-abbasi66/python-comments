@@ -1,16 +1,6 @@
 """
-Original version
-Found at
-https://github.com/python-engineer/pytorch-examples/tree/500afab9676b676d8a975ca797f93d1137ca5e0c/rnn-name-classification
-
-My changes:
-   - comments
-   - set_seed
-   - split data into train and test
-   - compute accuracy
+Here, nn.CrossEntropyLoss() is used instead of nn.NLLLoss()
 """
-
-
 import torch
 import torch.nn as nn 
 import matplotlib.pyplot as plt 
@@ -81,7 +71,7 @@ class MyRNN(nn.Module):
         self.hidden_size = hidden_size
         self.i2h = nn.Linear(input_size + hidden_size, hidden_size)
         self.i2o = nn.Linear(input_size + hidden_size, output_size)
-        self.softmax = nn.LogSoftmax(dim=1)
+        # self.softmax = nn.LogSoftmax(dim=1)
         
     def forward(self, input_tensor, hidden_tensor):
         """
@@ -94,7 +84,7 @@ class MyRNN(nn.Module):
         
         hidden = self.i2h(combined)
         output = self.i2o(combined)
-        output = self.softmax(output)
+        # output = self.softmax(output)
         return output, hidden
     
     def init_hidden(self):
@@ -148,7 +138,7 @@ for k in data_dict.keys():
     test_data_dict[k] = data_dict[k][train_size+1:]
 
 
-criterion = nn.NLLLoss()
+criterion = nn.CrossEntropyLoss()
 learning_rate = 0.005
 optimizer = torch.optim.SGD(rnn.parameters(), lr=learning_rate)
 n_iters = 100000
@@ -196,7 +186,7 @@ for iter in range(n_iters):
 plt.figure()
 plt.plot(all_losses)
 plt.show()
-plt.savefig('rnn_train_loss.png')
+plt.savefig('rnn_CrossEntropyLoss_train_loss.png')
 
 def predict(data_item):
     with torch.no_grad():
@@ -238,6 +228,5 @@ while True:
     sentence = input("Input:")
     if sentence == "quit":
         break
-
-    predict(sentence)
+    print(predict(sentence))
     

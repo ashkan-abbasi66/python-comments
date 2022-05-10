@@ -2,53 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9512c1d5-2214-4550-ab9e-389011d91f4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/.idea/simple-object-oriented-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/guide_classes_in_python_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/guide_iterators_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple-object-oriented-example/guide_iterators_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dir0_noJPG/baby.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dir1/bird.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dir1/mountain_Copy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dir1/mountain_small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dir2/baby.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mountain.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mountain_filtered.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3_hints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3_solution/ex3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guide_os_walk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/simple-tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simple-tests.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex4_hint2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_CrossEntropyLoss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_CrossEntropyLoss.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1400.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1400_Copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1400_small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/baby2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/constant_image_rgb_Copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data2/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data2/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data2/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data2/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prog_assignment.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/simple_tests.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../simple_tests/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_train_loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_CrossEntropyLoss_train_loss.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/POSTDOC/GITHUB/python-comments/prog/simple-tests/ex3",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/POSTDOC/GITHUB/python-comments/prog/simple-tests/ex3&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\POSTDOC\GITHUB\python-comments\prog\simple-tests\ex3" />
@@ -95,7 +56,7 @@
       <recent name="E:\POSTDOC\GITHUB\python-comments\prog\simple-object-oriented-example" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex3_unittest">
+  <component name="RunManager" selected="Python.ex4_hint2">
     <configuration name="ex3_hints" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple-tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="guide_classes_in_python_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex4_hint2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple-tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,7 +111,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\POSTDOC\GITHUB\python-comments\prog\simple-object-oriented-example\guide_classes_in_python_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex4_hint2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex4_hints" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="simple-tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex4_hints.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,10 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ex4_hint2" />
+        <item itemvalue="Python.ex4_hints" />
         <item itemvalue="Python.ex3_unittest" />
         <item itemvalue="Python.ex3_hints" />
         <item itemvalue="Python.guide_os_walk" />
-        <item itemvalue="Python.guide_classes_in_python_1" />
       </list>
     </recent_temporary>
   </component>
