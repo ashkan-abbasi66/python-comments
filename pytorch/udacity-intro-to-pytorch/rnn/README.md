@@ -17,9 +17,10 @@ I found it at the following links:
 - [here](https://github.com/python-engineer/pytorch-examples/tree/500afab9676b676d8a975ca797f93d1137ca5e0c/rnn-name-classification)
 - [youtube tutorial](https://img.youtube.com/vi/WEV61GmmPrk/hqdefault.jpg)](https://youtu.be/WEV61GmmPrk)
 
-It is based on the original PyTorch's example
-- [https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial)
-- [https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html](https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html)
+It is based on the original PyTorch's examples:
+- [NLP FROM SCRATCH: CLASSIFYING NAMES WITH A CHARACTER-LEVEL RNN
+](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial)
+- [NLP FROM SCRATCH: GENERATING NAMES WITH A CHARACTER-LEVEL RNN](https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html)
 
 
 Name dataset was downloaded from [here](https://download.pytorch.org/tutorial/data.zip).

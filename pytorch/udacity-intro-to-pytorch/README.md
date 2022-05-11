@@ -45,15 +45,15 @@
 
 
 
-**[loss functions](./loss%20functions.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
+**[guide_loss_functions_in_pytorch](./guide_loss_functions_in_pytorch.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
 
-**[autograd](./autograd.ipynb)**
+**[guide_autograd](./guide_autograd.ipynb)**
 
 **[guide_datasets_1](./guide_datasets_1.ipynb)**
 
-**[data manipulation layers](./data%20manipulation%20layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
+**[guide_data_manipulation_layers](./guide_data_manipulation_layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
 
-**[Tensorboard in PyTorch](./Tensorboard%20in%20PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
+**[guide_Tensorboard_in_PyTorch](./guide_Tensorboard_in_PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
 ```python
 from tensorboardX import SummaryWriter

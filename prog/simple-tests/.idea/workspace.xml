@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9512c1d5-2214-4550-ab9e-389011d91f4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex4_hint2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_CrossEntropyLoss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_CrossEntropyLoss.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_train_loss.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/rnn/rnn_CrossEntropyLoss_train_loss.png" afterDir="false" />
-    </list>
+    <list default="true" id="9512c1d5-2214-4550-ab9e-389011d91f4c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

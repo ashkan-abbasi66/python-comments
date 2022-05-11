@@ -1,13 +1,31 @@
 """
-Original version
-Found at
+I found this code at
 https://github.com/python-engineer/pytorch-examples/tree/500afab9676b676d8a975ca797f93d1137ca5e0c/rnn-name-classification
 
-My changes:
+My changes are:
    - some comments
    - set_seed
    - split data into train and test
    - compute accuracy
+
+The original version is
+https://github.com/spro/practical-pytorch/blob/master/char-rnn-classification/chhttps://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks#architecturer-rnn-classification.ipynb
+which is explained in the following link:
+https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial
+
+* Exercises *
+    Try with a different dataset of line -> category, for example:
+        Any word -> language
+        First name -> gender
+        Character name -> writer
+        Page title -> blog or subreddit
+    Get better results with a bigger and/or better shaped network
+        Add more linear layers
+        Try the nn.LSTM and nn.GRU layers
+        Combine multiple of these RNNs as a higher level network
+
+See also ../Readme.md
+
 """
 
 
@@ -153,6 +171,16 @@ learning_rate = 0.005
 optimizer = torch.optim.SGD(rnn.parameters(), lr=learning_rate)
 n_iters = 100000
 
+"""
+Training
+    Create input and target tensors
+    Create a zeroed initial hidden state
+    Read each letter in and
+    Keep hidden state for next letter
+    Compare final output to target
+    Back-propagate
+    Return the output and loss
+"""
 print("Training ...")
 
 def train(input_tensor, category_tensor):
