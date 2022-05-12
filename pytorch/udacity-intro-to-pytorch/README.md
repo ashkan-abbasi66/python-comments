@@ -47,7 +47,7 @@
 
 **[guide_loss_functions_in_pytorch](./guide_loss_functions_in_pytorch.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
 
-**[guide_autograd](./guide_autograd.ipynb)**
+**`autograd` in PyTorch**: `./guide_autograd_1.ipynb`, `./guide_autograd_2_linear_regression_from_scratch.ipynb`
 
 **[guide_datasets_1](./guide_datasets_1.ipynb)**
 
