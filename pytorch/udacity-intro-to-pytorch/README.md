@@ -1,26 +1,40 @@
 # Deep Learning with PyTorch
 
 * **Part 1:** Introduction to PyTorch and using tensors
+	* For `autograd` in PyTorch, see `./guide_autograd_1.ipynb`, and `./guide_autograd_2_linear_regression_from_scratch.ipynb`
+
+	* [guide_datasets_1](./guide_datasets_1.ipynb): How to use `torch.utils.data.Dataset` and `torch.utils.data.DataLoader`.
+
 * **Part 2:** Building fully-connected neural networks with PyTorch
+
 * **Part 3:** How to train a fully-connected network with backpropagation on MNIST
+
 * **Part 4:** Train a neural network (MLP) on Fashion-MNIST
+
 * **Part 5:** Fashion-MNIST; Training, Validation, Inference. How to reduce overfitting through Early Stopping or Dropout.
   * [**Introduction to Dropout**](https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/)
   * MNIST; [Basic MLP](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mlp/mlp-basic.ipynb); [MLP w/ dropout](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mlp/mlp-dropout.ipynb); [MLP w/ BN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mlp/mlp-batchnorm.ipynb)
   * [An example in Keras](https://github.com/christianversloot/machine-learning-articles/blob/main/how-to-use-dropout-with-keras.md) - [Example 2 in Keras](./assets/Dropout_Example.pdf)
   * **[CIFAR10; Dropout with different drop rates in practice](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)**
+
 * **Part 6:** How to save and load trained models
+
 * **CNN:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_solution.ipynb`
+
 * **Part 7:** Load image data with `torchvision` + data augmentation
+
 * **CNN w/ data augmentation:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_augmentation.ipynb`
   * test it w/o augmentation on the validation and test sets.
+
 * **Part 8:** Leverage the power of pretrained state-of-the-art image classifiers for your own dataset.
   * cats and dogs dataset.
   * [`./transfer-learning`](./transfer-learning): flowers dataset
+
 * **Autoencoder**: [`./autoencoder/`](./autoencoder)
   * Linear autoencoders
   * Convolutional autoencoders
   * Denoising autoencoders
+
 * **RNN**: `./rnn/`
 
 ---------------------------
@@ -46,10 +60,6 @@
 
 
 **[guide_loss_functions_in_pytorch](./guide_loss_functions_in_pytorch.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
-
-**`autograd` in PyTorch**: `./guide_autograd_1.ipynb`, `./guide_autograd_2_linear_regression_from_scratch.ipynb`
-
-**[guide_datasets_1](./guide_datasets_1.ipynb)**
 
 **[guide_data_manipulation_layers](./guide_data_manipulation_layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
 
