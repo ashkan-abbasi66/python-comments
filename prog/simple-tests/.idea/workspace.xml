@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9512c1d5-2214-4550-ab9e-389011d91f4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex4_hint3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex4_other.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex4_hint2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2_assignments_4_to_6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python2_assignments_4_to_6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/Part 8 - Transfer Learning - ResNet18.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/Part 8 - Transfer Learning - ResNet18.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/guide_Tensorboard_in_PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/guide_Tensorboard_in_PyTorch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/scratch_6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/scratch_7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/smartech_5thSession/intro_datasets_in_pytorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../pytorch/udacity-intro-to-pytorch/smartech_5thSession/intro_datasets_in_pytorch.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="9512c1d5-2214-4550-ab9e-389011d91f4c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
