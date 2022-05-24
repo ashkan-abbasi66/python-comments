@@ -16,6 +16,7 @@
   * MNIST; [Basic MLP](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mlp/mlp-basic.ipynb); [MLP w/ dropout](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mlp/mlp-dropout.ipynb); [MLP w/ BN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/mlp/mlp-batchnorm.ipynb)
   * [An example in Keras](https://github.com/christianversloot/machine-learning-articles/blob/main/how-to-use-dropout-with-keras.md) - [Example 2 in Keras](./assets/Dropout_Example.pdf)
   * **[CIFAR10; Dropout with different drop rates in practice](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)**
+  * [State of the art results on Fashion MNIST](https://paperswithcode.com/sota/image-classification-on-fashion-mnist).
 
 * **Part 6:** How to save and load trained models
 
@@ -25,6 +26,7 @@
 
 * **CNN w/ data augmentation:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_augmentation.ipynb`
   * test it w/o augmentation on the validation and test sets.
+  * [Random Erasing Data Augmentation with PyTorch experiments with ResNet variants on CIFAR10, CIFAR100 and Fashion-MNIST](https://github.com/zhunzhong07/Random-Erasing)
 
 * **Part 8:** Leverage the power of pretrained state-of-the-art image classifiers for your own dataset.
   * cats and dogs dataset.
@@ -58,60 +60,36 @@
 - [ ] 
 
 
-**Set seed for random number generators**
+* **Set seed for random number generators**
 ```python
+# use `torch.seed()` to get the current seed.
 def set_seed(seed):
     random.seed(seed)
     np.random.seed(seed)
-    torch.manual_seed(seed)
+    torch.manual_seed(seed)  # Sets the seed for generating random numbers.
     if torch.cuda.is_available():
         torch.cuda.manual_seed(seed)
         torch.cuda.manual_seed_all(seed)
 ```
 
-**[guide_loss_functions_in_pytorch](./guide_loss_functions_in_pytorch.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
+* **[guide_loss_functions_in_pytorch](./guide_loss_functions_in_pytorch.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
 
-**[guide_data_manipulation_layers](./guide_data_manipulation_layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
+* **[guide_data_manipulation_layers](./guide_data_manipulation_layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
 
-**[guide_Tensorboard_in_PyTorch](./guide_Tensorboard_in_PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
+* **[guide_Tensorboard_in_PyTorch](./guide_Tensorboard_in_PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
-```python
-from tensorboardX import SummaryWriter
-writer = SummaryWriter(log_dir=os.path.join(output_root, 'Tensorboard_Results'))
+Usage: `tensorboard --logdir=logs`
 
-# Main Training Loop of your program
-total_loss = []
-global iteration
+* Articles to be studied
+    * **Convolutional neural networks (CNNs)**:
+        - [Kernels](https://setosa.io/ev/image-kernels/)
+        - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
+        - [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU)
+        - [MIT 6.S191 (2021): Convolutional Neural Networks](https://www.youtube.com/watch?v=AjtX1N_VT9E)
 
-model.train()
-for batch_idx, (inputs, targets) in enumerate(train_loader):
-	optimizer.zero_grad()
-    outputs = model(inputs.to(device))
-    loss = criterion(outputs, targets)
-    
-    total_loss.append(loss.item())
-    
-    writer.add_scalar('train_loss_logs', loss.item(), iteration)
-    
-    iteration += 1
-    
-    loss.backward()
-    optimizer.step()
+    * **Transfer Learning**:
+        - [Transfer Learning (C3W2L07) by Andrew Ng](https://www.youtube.com/watch?v=yofjFQddwHE)
 
-epoch_loss = sum(total_loss)/len(total_loss)
-
-```
-Usage: ` tensorboard --logdir="./output/nodulemnist3d/220410_122404/Tensorboard_Results/"`
-
-**Convolutional neural networks (CNNs)**:
-- [Kernels](https://setosa.io/ev/image-kernels/)
-- [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
-- [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU)
-- [MIT 6.S191 (2021): Convolutional Neural Networks](https://www.youtube.com/watch?v=AjtX1N_VT9E)
-
-**Transfer Learning**:
-- [Transfer Learning (C3W2L07) by Andrew Ng](https://www.youtube.com/watch?v=yofjFQddwHE)
-
-**Optimization**:
-  - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
+    * **Optimization**:
+          - [Unstable gradient problem (Vanishing / Exploding gradients)](http://neuralnetworksanddeeplearning.com/chap5.html)
 
