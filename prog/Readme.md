@@ -17,6 +17,8 @@ Textbooks:
 
 
 # Misc. Notes
+- **Format a number with leading zeros**: `("%d"%int_var).zfill(2)` - `print(f'{int_var:03})'`
+
 - **Python Sequences (Sequence objects)**: 
 	- They are ordered.
 	- There are 6 types: string (group of characters inside `""` or `''`), list, tuple, byte sequence, byte array, and range object.
