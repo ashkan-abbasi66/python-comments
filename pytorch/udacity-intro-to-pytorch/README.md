@@ -22,6 +22,7 @@
 	* `./mlp-mnist/`: MLP applied to MNIST ~ 98% accuracy on test.
 
 * **CNN** 
+	*  `./cnn-basic-operations`: Applying custom filters and max-pooling.
 	* `./cnn-cifar/`: A simple CNN applied to CIFAR10 dataset w/ or w/o data augmentation.
 
 * **Part 7:** Load image data with `torchvision` + data augmentation
