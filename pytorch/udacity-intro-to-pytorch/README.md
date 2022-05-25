@@ -19,8 +19,10 @@
   * [State of the art results on Fashion MNIST](https://paperswithcode.com/sota/image-classification-on-fashion-mnist).
 
 * **Part 6:** How to save and load trained models
+	* `./mlp-mnist/`: MLP applied to MNIST ~ 98% accuracy on test.
 
-* **CNN:** CIFAR10 dataset; `./cnn-cifar/cifar10_cnn_solution.ipynb`
+* **CNN** 
+	* `./cnn-cifar/`: A simple CNN applied to CIFAR10 dataset w/ or w/o data augmentation.
 
 * **Part 7:** Load image data with `torchvision` + data augmentation
 
