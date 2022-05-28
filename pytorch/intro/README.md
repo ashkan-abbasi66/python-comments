@@ -54,8 +54,7 @@
 # Notes
 
 **Todo**
-
-- [ ] new CNN examples `cifar10_cnn` and `cifar10_cnn_augmentation`
+- [ ] **SRCNN - Image Super-Resolution Using Deep Convolutional Networks (ECCV 2014); [here](https://github.com/yjn870/SRCNN-pytorch)**
 - [ ] Tokenization - TEXT analysis.
 - [ ] 
 - [x] CNN examples (MNIST; [Plain CNN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-basic.ipynb); [CNN w/ He initialization](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-he-init.ipynb))

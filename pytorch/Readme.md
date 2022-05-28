@@ -4,7 +4,7 @@
 
 [Udacity/Intro to Deep Learning with PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 
-- **[codes](./udacity-intro-to-pytorch)** - [Main Entry]
+- **[codes](./intro)** - [Main Entry]
 - [other materials](./udacity-pytorch)
 
 Use PyTorch in **multiple domains** speech, CV, and NLP => [PyTorch Fundamentals](https://docs.microsoft.com/en-us/learn/paths/pytorch-fundamentals/) by Microsoft.
