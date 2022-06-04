@@ -38,6 +38,7 @@
 * **Autoencoder**: [`./autoencoder/`](./autoencoder)
   * Linear autoencoders
   * Convolutional autoencoders
+      * Transpoed Convolution
   * Denoising autoencoders
 
 * **RNN**: `./rnn/`

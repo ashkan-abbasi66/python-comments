@@ -17,6 +17,25 @@ Textbooks:
 
 
 # Misc. Notes
+- **Copy files in a folder into another folder**:
+
+    ```python
+    import os, shutil
+
+    def copytree(src, dst, symlinks=False, ignore=None):
+        """
+        Found at
+        https://stackoverflow.com/questions/1868714/how-do-i-copy-an-entire-directory-of-files-into-an-existing-directory-using-pyth
+        """
+        for item in os.listdir(src):
+            s = os.path.join(src, item)
+            d = os.path.join(dst, item)
+            if os.path.isdir(s):
+                shutil.copytree(s, d, symlinks, ignore)
+            else:
+                shutil.copy2(s, d)
+    ```
+
 - **Format a number with leading zeros**: `("%d"%int_var).zfill(2)` - `print(f'{int_var:03})'`
 
 - **Python Sequences (Sequence objects)**: 
