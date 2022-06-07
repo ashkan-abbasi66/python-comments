@@ -41,6 +41,10 @@
       * Transpoed Convolution
   * Denoising autoencoders
 
+* **Fully Convolutional Networks**:
+  * `fcn.ipynb`: Semantic segmentation on PASCAL VOC 2012 with ResNet18 as feature extractor.
+
+
 * **RNN**: `./rnn/`
 
 ---------------------------
