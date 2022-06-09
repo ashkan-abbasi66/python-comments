@@ -31,9 +31,15 @@
       * TODO: test it w/o augmentation on the validation and test sets.
       * [Random Erasing Data Augmentation with PyTorch experiments with ResNet variants on CIFAR10, CIFAR100 and Fashion-MNIST](https://github.com/zhunzhong07/Random-Erasing)
 
-* **Part 8:** Leverage the power of pretrained state-of-the-art image classifiers for your own dataset.
-  * cats and dogs dataset.
-  * [`./transfer-learning`](./transfer-learning): flowers dataset
+* **Part 8:** Leverage the power of *pretrained* state-of-the-art image classifiers for your own dataset.
+  * [Lecture from CS231n](https://cs231n.github.io/transfer-learning/)
+  * Feature Extraction Approach: 
+  	* `Part 8 - Transfer Learning - ResNet18.ipynb` - on Dogs vs. Cats Kaggle dataset.
+  	* [`./transfer-learning`](./transfer-learning): flowers dataset
+  * Fine-tuning Approach:
+  	* [ ] Practical Example ? - See [1](https://d2l.ai/chapter_computer-vision/fine-tuning.html), [2](https://www.tensorflow.org/tutorials/images/transfer_learning), [3](https://lisaong.github.io/mldds-courseware/03_TextImage/transfer-learning.slides.html)
+  	* When and how to fine-tune?
+  	![](./assets/when_how_fine_tuning.png)
 
 * **Autoencoder**: [`./autoencoder/`](./autoencoder)
   * Linear autoencoders
