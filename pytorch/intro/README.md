@@ -43,6 +43,8 @@
 
 * **Fully Convolutional Networks**:
   * `./fcn/`: Semantic segmentation on PASCAL VOC 2012 with ResNet18 as feature extractor.
+  * https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvision/
+  * Modern Computer Vision with PyTorch - Chapter ?
 
 
 * **RNN**: `./rnn/`

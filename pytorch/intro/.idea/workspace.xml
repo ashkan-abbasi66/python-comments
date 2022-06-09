@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e0fb7d9-18bc-422f-8b32-39bd9a4c3bc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcn/fcn_inference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcn/fcn_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcn/utils_io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fcn/utils_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/udacity-intro-to-pytorch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/fcn-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/fcn-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fcn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/fcn/fcn_org.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="7e0fb7d9-18bc-422f-8b32-39bd9a4c3bc6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,11 +171,6 @@
           <url>file://$USER_HOME$/Anaconda3/envs/py38torch/Lib/site-packages/d2l/torch.py</url>
           <line>461</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fcn/fcn_train.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
