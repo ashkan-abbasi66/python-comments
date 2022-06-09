@@ -48,16 +48,16 @@
 
 * **Fully Convolutional Networks**:
   * `./fcn/`: Semantic segmentation on PASCAL VOC 2012 with ResNet18 as feature extractor.
-  * https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvision/
-  * Modern Computer Vision with PyTorch - Chapter ?
+  * [ ] https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvision/
+  * [ ] Modern Computer Vision with PyTorch - Chapter ?
 
 
-* **RNN**: `./rnn/`
+* [ ] **RNN**: `./rnn/`
 
 ---------------------------
-* **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
+* [ ] **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
   * More on weight initialization: [link 1](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html#How-to-find-appropriate-initialization-values); [link 2](https://www.askpython.com/python-modules/initialize-model-weights-pytorch)
-* **Batch normalization**: `batch-norm` folder; 
+* [ ] **Batch normalization**: `batch-norm` folder; 
   * [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
   * [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
 
@@ -68,7 +68,7 @@
 **Todo**
 - [ ] **SRCNN - Image Super-Resolution Using Deep Convolutional Networks (ECCV 2014); [here](https://github.com/yjn870/SRCNN-pytorch)**
 - [ ] Tokenization - TEXT analysis.
-- [ ] 
+- [x] 
 - [x] CNN examples (MNIST; [Plain CNN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-basic.ipynb); [CNN w/ He initialization](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-he-init.ipynb))
 - [x] Implement different initialization methods in PyTorch 
 - [ ] 
