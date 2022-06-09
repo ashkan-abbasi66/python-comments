@@ -33,10 +33,10 @@
 
 * **Part 8:** Leverage the power of *pretrained* state-of-the-art image classifiers for your own dataset.
   * [Lecture from CS231n](https://cs231n.github.io/transfer-learning/)
-  * Feature Extraction Approach: 
+  * Feature Extraction Approach:
   	* `Part 8 - Transfer Learning - ResNet18.ipynb` - on Dogs vs. Cats Kaggle dataset.
   	* [`./transfer-learning`](./transfer-learning): flowers dataset
-  * Fine-tuning Approach:
+  * Fine-tuning Approach: 
   	* [ ] Practical Example ? - See [1](https://d2l.ai/chapter_computer-vision/fine-tuning.html), [2](https://www.tensorflow.org/tutorials/images/transfer_learning), [3](https://lisaong.github.io/mldds-courseware/03_TextImage/transfer-learning.slides.html)
   	* When and how to fine-tune?
   	![](./assets/when_how_fine_tuning.png)
