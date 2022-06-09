@@ -28,8 +28,7 @@
 * **Part 7:** Load image data with `torchvision` + data augmentation
 
     * `./cnn-cifar/`: Example of a CNN w/ data augmentation on CIFAR10.
-      * TODO: test it w/o augmentation on the validation and test sets.
-      * [Random Erasing Data Augmentation with PyTorch experiments with ResNet variants on CIFAR10, CIFAR100 and Fashion-MNIST](https://github.com/zhunzhong07/Random-Erasing)
+      * [ ] Apply [Random Erasing Data Augmentation with PyTorch experiments with ResNet variants on CIFAR10, CIFAR100 and Fashion-MNIST](https://github.com/zhunzhong07/Random-Erasing)
 
 * **Part 8:** Leverage the power of *pretrained* state-of-the-art image classifiers for your own dataset.
   * [Lecture from CS231n](https://cs231n.github.io/transfer-learning/)
