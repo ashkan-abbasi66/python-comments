@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/udacity-intro-to-pytorch.iml" filepath="$PROJECT_DIR$/.idea/udacity-intro-to-pytorch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/intro.iml" filepath="$PROJECT_DIR$/.idea/intro.iml" />
     </modules>
   </component>
 </project>
