@@ -34,7 +34,7 @@
   * [Lecture from CS231n](https://cs231n.github.io/transfer-learning/)
   * Feature Extraction Approach:
   	* `Part 8 - Transfer Learning - ResNet18.ipynb` - on Dogs vs. Cats Kaggle dataset.
-  	* [`./transfer-learning`](./transfer-learning): flowers dataset
+  	* [`./transfer-learning`](./transfer-learning): Oxford 102 Flowers dataset
   * Fine-tuning Approach: 
   	* [ ] Practical Example ? - See [1](https://d2l.ai/chapter_computer-vision/fine-tuning.html), [2](https://www.tensorflow.org/tutorials/images/transfer_learning), [3](https://lisaong.github.io/mldds-courseware/03_TextImage/transfer-learning.slides.html)
   	* When and how to fine-tune?
@@ -69,8 +69,11 @@ Datasets used in this course:
 * MNIST:
 * Fashion MNIST:
 * CIFAR-10:
+* Oxford 102 Flowers:
 * PASCAL VOC 2012:`./fcn/`; 
-* 
+* CamVid: Segmentation dataset with per-pixel semantic segmentation of over 700 images. [link1](https://s3.amazonaws.com/fast-ai-imagelocal/camvid.tgz); [link2 from Kaggle](https://www.kaggle.com/datasets/carlolepelaars/camvid)
+* Misc. Links:
+	* https://course.fast.ai/datasets
 
 - - -
 
