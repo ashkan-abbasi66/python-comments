@@ -88,7 +88,7 @@ Training
 """
 start_time = time.time()
 
-num_epochs = 5
+num_epochs = 10
 
 # Tp keep track of the statistics at the completion of epoch
 train_losses, test_losses = [], []

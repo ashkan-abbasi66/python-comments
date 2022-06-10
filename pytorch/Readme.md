@@ -27,6 +27,7 @@ Textbooks:
 - Hands-On Machine Learning
 - Eli Stevens -Deep Learning with PyTorch
 - **[D2L](https://d2l.ai/index.html)**
+- [Modern Computer Vision with PyTorch, published by Packt](https://github.com/PacktPublishing/Modern-Computer-Vision-with-PyTorch)
 
 
 

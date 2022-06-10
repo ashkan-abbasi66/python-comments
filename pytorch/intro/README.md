@@ -51,6 +51,7 @@
   * [ ] https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvision/
   * [ ] Modern Computer Vision with PyTorch - Chapter ?
 
+* [ ] **Object Detection**: `./od/`
 
 * [ ] **RNN**: `./rnn/`
 
@@ -61,6 +62,17 @@
   * [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
   * [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
 
+
+- - -
+
+Datasets used in this course:
+* MNIST:
+* Fashion MNIST:
+* CIFAR-10:
+* PASCAL VOC 2012:`./fcn/`; 
+* 
+
+- - -
 
 
 # Notes
@@ -92,7 +104,7 @@ def set_seed(seed):
 
 * **[guide_Tensorboard_in_PyTorch](./guide_Tensorboard_in_PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
-Usage: `tensorboard --logdir=logs`
+  Usage: `tensorboard --logdir=logs`
 
 * Articles to be studied
     * **Convolutional neural networks (CNNs)**:
