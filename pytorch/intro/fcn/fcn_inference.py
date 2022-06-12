@@ -1,3 +1,4 @@
+from utils_metric import iou_coef
 from utils_io import *
 from utils_model import *
 import torch.nn
@@ -47,7 +48,8 @@ checkpoint = torch.load(checkpoint_filename)
 net.load_state_dict(checkpoint)
 
 image_lists = []
-n_rows = 4
+iou_list = []
+n_rows = 3
 for i in range(n_rows):
     crop_rect = (0, 0, 320, 480)
 
@@ -57,6 +59,7 @@ for i in range(n_rows):
     label_image = crop_image(test_labels[i], crop_rect)     # [3, 320, 480]
 
     image_lists.append([input_image.permute(1, 2, 0), pred.cpu(), label_image.permute(1, 2, 0)])
+
 
 plot_images_in_rows(image_lists, len(image_lists), save_path='')
 plot_images_in_rows(image_lists, len(image_lists), save_path='plot_some_test_images')
