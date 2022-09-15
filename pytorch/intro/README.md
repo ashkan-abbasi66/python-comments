@@ -78,6 +78,14 @@ Datasets used in this course:
 - - -
 
 
+# Model Benchmarking
+Benchmarking different models on different datasets:
+
+- [Keras implementation of various CNNs on CIFAR-10 dataset](https://github.com/BIGBALLON/cifar-10-cnn)
+- [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
+
+
+
 # Notes
 
 **Todo**
@@ -112,7 +120,6 @@ def set_seed(seed):
 * Articles to be studied
     * **Convolutional neural networks (CNNs)**:
         - [Kernels](https://setosa.io/ev/image-kernels/)
-        - [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
         - [A friendly introduction to Convolutional Neural Networks and Image Recognition](https://www.youtube.com/watch?v=2-Ol7ZB0MmU)
         - [MIT 6.S191 (2021): Convolutional Neural Networks](https://www.youtube.com/watch?v=AjtX1N_VT9E)
 
