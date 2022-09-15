@@ -1,0 +1,21 @@
+Name of Employee,Sales,Quarter,Country
+Jon,1000,1,US
+Mark,300,1,Japan
+Tina,400,1,Brazil
+Maria,500,1,UK
+Bill,800,1,US
+Jon,1000,2,Brazil
+Mark,500,2,Japan
+Tina,700,2,Brazil
+Maria,50,2,US
+Bill,60,2,US
+Jon,1000,3,US
+Mark,900,3,Japan
+Tina,750,3,Brazil
+Maria,200,3,UK
+Bill,300,3,Brazil
+Jon,1000,4,Japan
+Mark,900,4,Japan
+Tina,250,4,Brazil
+Maria,750,4,UK
+Bill,50,4,US
