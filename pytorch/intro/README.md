@@ -78,23 +78,9 @@ Datasets used in this course:
 - - -
 
 
-# Model Benchmarking
-Benchmarking different models on different datasets:
-
-- [Keras implementation of various CNNs on CIFAR-10 dataset](https://github.com/BIGBALLON/cifar-10-cnn)
-- [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
 
 
-
-# Notes
-
-**Todo**
-- [ ] **SRCNN - Image Super-Resolution Using Deep Convolutional Networks (ECCV 2014); [here](https://github.com/yjn870/SRCNN-pytorch)**
-- [ ] Tokenization - TEXT analysis.
-- [x] 
-- [x] CNN examples (MNIST; [Plain CNN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-basic.ipynb); [CNN w/ He initialization](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-he-init.ipynb))
-- [x] Implement different initialization methods in PyTorch 
-- [ ] 
+# More Specific Notes
 
 
 * **Set seed for random number generators**
@@ -109,13 +95,44 @@ def set_seed(seed):
         torch.cuda.manual_seed_all(seed)
 ```
 
+
 * **[guide_loss_functions_in_pytorch](./guide_loss_functions_in_pytorch.ipynb)**: Use logits with `nn.CrossEntropyLoss`, and use `nn.LogSoftmax` with `nn.NLLLoss`. See also [`LogProbabilityAndLogSoftmax.pdf`](./assets/LogProbabilityAndLogSoftmax.pdf).
 
+
 * **[guide_data_manipulation_layers](./guide_data_manipulation_layers.ipynb)**: max pooling (MaxPool2d), batch normalization (BatchNorm1d), Dropout.
+
 
 * **[guide_Tensorboard_in_PyTorch](./guide_Tensorboard_in_PyTorch.ipynb)** - [video](https://www.youtube.com/watch?v=6CEld3hZgqc&list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN&index=5)
 
   Usage: `tensorboard --logdir=logs`
+
+
+
+
+
+# Model Benchmarking
+
+Benchmarking different models on different datasets:
+
+- [Keras implementation of various CNNs on CIFAR-10 dataset](https://github.com/BIGBALLON/cifar-10-cnn)
+- [Justin Johnson's benchmarks for popular CNN models](https://github.com/jcjohnson/cnn-benchmarks)
+
+
+
+
+
+
+# Others
+
+**Todo**
+- [ ] **SRCNN - Image Super-Resolution Using Deep Convolutional Networks (ECCV 2014); [here](https://github.com/yjn870/SRCNN-pytorch)**
+- [ ] Tokenization - TEXT analysis.
+- [x] 
+- [x] CNN examples (MNIST; [Plain CNN](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-basic.ipynb); [CNN w/ He initialization](https://github.com/rasbt/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-he-init.ipynb))
+- [x] Implement different initialization methods in PyTorch 
+- [ ] 
+
+
 
 * Articles to be studied
     * **Convolutional neural networks (CNNs)**:
