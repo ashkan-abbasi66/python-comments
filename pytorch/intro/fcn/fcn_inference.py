@@ -29,10 +29,12 @@ net = torch.nn.Sequential(*wanted_layers)
 num_classes = 21
 net.add_module('final_conv', torch.nn.Conv2d(512, num_classes, kernel_size=1))
 
+st = 32
 net.add_module('transpose_conv', torch.nn.ConvTranspose2d(num_classes, num_classes,
-                                    kernel_size=64, padding=16, stride=32))
-
-W = bilinear_kernel(num_classes, num_classes, 64)
+                                                          stride=st,
+                                                          kernel_size=2*st,
+                                                          padding=st//2))
+W = bilinear_kernel(num_classes, num_classes, 2*st)
 net.transpose_conv.weight.data.copy_(W)
 
 

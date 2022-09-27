@@ -25,6 +25,12 @@ def plot_images_in_rows(image_lists, n_rows, save_path = ''):
 def read_voc_images(voc_dir, is_train=True):
     """
     Read all VOC feature and label images.
+
+    "features" will be a list comprised of images read by "torchvision.io.read_image"
+    "labels" will be a list comprised of labels (RGB images corresponding to each
+    input image).
+
+    Both "features" and "labels" contain torch tensors.
     """
     txt_fname = os.path.join(voc_dir, 'ImageSets', 'Segmentation',
                              'train.txt' if is_train else 'val.txt')
@@ -60,7 +66,34 @@ VOC_CLASSES = ['background', 'aeroplane', 'bicycle', 'bird', 'boat',
 
 def voc_colormap2label():
     """
-    Build the mapping from RGB to class indices for VOC labels.
+    Build the mapping from RGB values to class labels in VOC dataset.
+
+    VOC_COLORMAP is a constant list with 21 elements:
+
+    VOC_COLORMAP[0]=[0, 0, 0]     ==> class 0
+    VOC_COLORMAP[1]=[128, 0, 0]   ==> class 1
+    VOC_COLORMAP[2]=[0, 128, 0]   ==> class 2
+    ...
+    VOC_COLORMAP[20]=[0, 64, 128] ==> class 20.
+
+    Using 3 numbers (each one in the range of 0 and 255),
+    we can uniquely define 256**3 colors (class names).
+
+    Let's assume that each color (class) is represented by an index of
+    a long tensor (named "colormap2label"). So, this tensor has a
+    shape of (256**3,). Then, we can store class labels in each element
+    of this tensor.
+
+    colormap2label[index of the color/class]=class name / number
+
+    [0, 0, 0]      0  ===> colormap2label[0] = 0
+    [128, 0, 0]    1  ===> colormap2label[(128*256+0)*256+0]=1
+    [0, 128, 0]    2  ===> colormap2label[(0*256+128)*256+0]=2
+    ...
+    [0, 64, 128]   20 ===> colormap2label[(0*256+64)*256+128]=20
+
+    We can store this long tensor and use it later to convert RGB values
+    to their corresponding class labels. See "voc_label_indices".
     """
     colormap2label = torch.zeros(256 ** 3, dtype=torch.long)
     for i, colormap in enumerate(VOC_COLORMAP):
@@ -71,7 +104,20 @@ def voc_colormap2label():
 
 def voc_label_indices(colormap, colormap2label):
     """
-    Map any RGB values in VOC labels to their class indices.
+    RGB label to numeric label converter
+
+    Maps an RGB label image to a gray-scale image in
+    which RGB values are replaced with corresponding
+    numeric class labels.
+
+    "colormap" is the given LABEL for an input image.
+        it is a torch tensor with shape [3, 320, 480].
+    Because labels are stored as RGB images, we need to convert
+    RGB values to class labels.
+
+    This function uses "colormap2label" to convert RGB values into
+    proper indices and retrieve class labels.
+
     """
     colormap = colormap.permute(1, 2, 0).numpy().astype('int32')
     idx = ((colormap[:, :, 0] * 256 + colormap[:, :, 1]) * 256
@@ -121,7 +167,7 @@ class VOCSegDataset(torch.utils.data.Dataset):
 
         self.colormap2label = voc_colormap2label()
 
-        print('read ' + str(len(self.features)) + ' examples')
+        print('\nINFO: read ' + str(len(self.features)) + ' examples')
 
     # def normalize_image(self, img):
     #     return self.transform(img.float() / 255)
@@ -134,6 +180,11 @@ class VOCSegDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         feature, label = voc_rand_crop(self.features[idx], self.labels[idx],
                                        *self.crop_size)
+        # DEBUG
+        # plt.imsave('label.png',label.permute(1,2,0).numpy())
+
+        # feature: torch.Size([3, 320, 480])
+        # label: torch.Size([3, 320, 480])  == voc_label_indices(.) ==> torch.Size([320, 480])
         return (feature, voc_label_indices(label, self.colormap2label))
 
     def __len__(self):

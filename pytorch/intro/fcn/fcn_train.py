@@ -22,9 +22,9 @@ win32process.SetPriorityClass(handle, win32process.REALTIME_PRIORITY_CLASS)
 """
 Get Dataloaders
 """
-data_dir = r'E:\POSTDOC\PYTHON_CODES\DATASETS'
+data_dir = r'../../../../../PYTHON_CODES/DATASETS'
 voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
-print(voc_dir)
+print("\nINFO: dataset directory:\n", voc_dir)
 
 batch_size = 32  # 64
 crop_size = (320, 480)
@@ -37,17 +37,21 @@ Build model
 """
 pretrained_net = torchvision.models.resnet18(pretrained=True)
 
+print("\nINFO: The whole network architecture:\n", pretrained_net)
+
 wanted_layers = list(pretrained_net.children())[:-2]
-print(len(wanted_layers))
+print("\nINFO: number of layers to keep from the whole network: ", len(wanted_layers))
 net = torch.nn.Sequential(*wanted_layers)
 
 num_classes = 21
 net.add_module('final_conv', torch.nn.Conv2d(512, num_classes, kernel_size=1))
 
+st = 32
 net.add_module('transpose_conv', torch.nn.ConvTranspose2d(num_classes, num_classes,
-                                    kernel_size=64, padding=16, stride=32))
-
-W = bilinear_kernel(num_classes, num_classes, 64)
+                                                          stride=st,
+                                                          kernel_size=2*st,
+                                                          padding=st//2))
+W = bilinear_kernel(num_classes, num_classes, 2*st)
 net.transpose_conv.weight.data.copy_(W)
 
 
@@ -59,18 +63,23 @@ if torch.cuda.is_available():
     my_device = torch.device('cuda')
 else:
     my_device = torch.device('cpu')
-print('Device: {}'.format(my_device))
+print('\nINFO: device: {}'.format(my_device))
 
 def loss(predictions, labels):
     """
-    predictions = a tensor with shape [32, 21, 320, 480]
-    targets shape = a tensor with shape [32, 320, 480]
+    Assume that batch size = 32 and "num_classes = 21". Then,
+    predictions = a tensor with shape [32, 21, 320, 480]  (NCHW); One-hot encoded predictions
+    targets shape = a tensor with shape [32, 320, 480]     (NHW); Numeric labels
     Then,
     F.cross_entropy(predictions, labels, reduction='none') has shape [32, 320, 480]
-    Therefore, we use "mean" function on it two times to reduce it to [32] numbers
-    which represent the error for each image.
+    Therefore, we use "mean" function on it two times to reduce it to 32 numbers
+    (torch.Size([32])).
+
+    Each of these numbers will represent the prediction error for one input image
+    in the batch.
     """
     return F.cross_entropy(predictions, labels, reduction='none').mean(1).mean(1)
+    # Alternatively:
     # return torch.nn.CrossEntropyLoss(reduction='none')(predictions, labels).mean(1).mean(1)
 
 lr = 0.001
@@ -112,7 +121,7 @@ for e in range(num_epochs):
     test_accuracies.append(test_acc)
 
     if test_loss <= valid_loss_min:
-        msg = 'Validation loss decreased ({:.6f} --> {:.6f}). Saving model ...'
+        msg = '\nINFO: validation loss decreased ({:.6f} --> {:.6f}). Saving model ...'
         print(msg.format(valid_loss_min, test_loss))
         torch.save(net.state_dict(), checkpoint_filename)
         valid_loss_min = test_loss
