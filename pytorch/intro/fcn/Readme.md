@@ -1,5 +1,18 @@
 # Fully Convolutional Network for Semantic Segmentation
 
+
+## Main files
+
+* `fcn_train.py`: trains an FCN on VOC 2012 dataset for semantic segmentation.
+
+* `fcn_inference.py`: loads the model (`trained_fcn.pt`) and some validation images 
+for making predictions.  
+
+The main utility functions used in the above scripts are saved in the following modules:
+- `utils_io.py`
+- `utils_model.py`
+
+
 ## How to access layers of a network
 
 Let's load a network architecture:
@@ -110,3 +123,8 @@ X = torch.rand(size=(1, 3, 320, 480))
 print(net(X).shape)  # torch.Size([1, 21, 320, 480])
 ```
 
+## TODO:
+
+- [ ] Dice score
+- [ ] Full FCN implementation
+- [ ] Change dataset (e.g., use CamVid)
