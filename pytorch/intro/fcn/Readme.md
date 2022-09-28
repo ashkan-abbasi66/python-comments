@@ -123,6 +123,13 @@ X = torch.rand(size=(1, 3, 320, 480))
 print(net(X).shape)  # torch.Size([1, 21, 320, 480])
 ```
 
+
+## References and More Reading
+
+- D2L book, [14.9](https://d2l.ai/chapter_computer-vision/semantic-segmentation-and-dataset.html) to [14.11](https://d2l.ai/chapter_computer-vision/fcn.html).
+- Long, Jonathan, Evan Shelhamer, and Trevor Darrell. "Fully convolutional networks for semantic segmentation." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 3431-3440. 2015.
+
+
 ## TODO:
 
 - [ ] Dice score
