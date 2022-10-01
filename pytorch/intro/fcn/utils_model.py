@@ -1,5 +1,4 @@
 import torch
-from utils_io import VOC_COLORMAP
 from utils_io import VOCSegDataset
 
 
@@ -172,8 +171,3 @@ def predict(net, img, device):
     return pred.reshape(pred.shape[1], pred.shape[2])  # [1, 320, 480] ==> [320, 480]
 
 
-def label2image(pred, device):
-    # pred: [320, 480]
-    colormap = torch.tensor(VOC_COLORMAP, device=device)  # torch.Size([21, 3])
-    X = pred.long()  # convert to torch.int64
-    return colormap[X, :]  # [320, 480, 3]

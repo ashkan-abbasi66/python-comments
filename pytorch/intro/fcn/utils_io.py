@@ -63,6 +63,11 @@ VOC_CLASSES = ['background', 'aeroplane', 'bicycle', 'bird', 'boat',
                'diningtable', 'dog', 'horse', 'motorbike', 'person',
                'potted plant', 'sheep', 'sofa', 'train', 'tv/monitor']
 
+def label2image(pred, device):
+    # pred: [320, 480]
+    colormap = torch.tensor(VOC_COLORMAP, device=device)  # torch.Size([21, 3])
+    X = pred.long()  # convert to torch.int64
+    return colormap[X, :]  # [320, 480, 3]
 
 def voc_colormap2label():
     """
