@@ -8,6 +8,9 @@
 * `fcn_inference.py`: loads the model (`trained_fcn.pt`) and some validation images 
 for making predictions.  
 
+* `fcn_deeplabv3_inference.py`: loads pretrained FCN (with resnet-101 backbone) and DeepLabV3.
+
+
 The main utility functions used in the above scripts are saved in the following modules:
 - `utils_io.py`
 - `utils_model.py`
