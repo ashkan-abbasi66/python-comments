@@ -3,12 +3,16 @@
 
 ## Main files
 
-* `fcn_train.py`: trains an FCN on VOC 2012 dataset for semantic segmentation.
+* `train_fcn.py`: trains an FCN on VOC 2012 dataset for semantic segmentation.
 
-* `fcn_inference.py`: loads the model (`trained_fcn.pt`) and some validation images 
+* `inference_fcn.py`: loads the model (`trained_fcn.pt`) and some validation images 
 for making predictions.  
 
-* `fcn_deeplabv3_inference.py`: loads pretrained FCN (with resnet-101 backbone) and DeepLabV3.
+* `inference_fcn_one_image.py`:
+
+* `inference_fcn_resnet101.py`: loads pretrained FCN (with resnet-101 backbone).
+
+* `inference_deeplabv3_resnet101.py`
 
 
 The main utility functions used in the above scripts are saved in the following modules:
@@ -136,5 +140,6 @@ print(net(X).shape)  # torch.Size([1, 21, 320, 480])
 ## TODO:
 
 - [ ] Dice score
+- [ ] write inference on one image for the trained FCN. Compare its result with pretrained models.
 - [ ] Full FCN implementation
 - [ ] Change dataset (e.g., use CamVid)
