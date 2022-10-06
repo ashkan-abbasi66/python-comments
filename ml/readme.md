@@ -1,4 +1,7 @@
+* `mnist_linear_classifiers`: 
 
+
+* `pandas_simple_examples`:
 
 # Good Resources
 
