@@ -1,5 +1,5 @@
 """
-python train_fcn.py
+srun -u -p gpu --gres gpu:1 --mem-per-cpu=16GB --time=0-20 python train_fcn.py
 """
 
 from utils_io import *
@@ -9,24 +9,24 @@ from torch.nn import functional as F
 import matplotlib.pyplot as plt
 import time
 
-checkpoint_filename = 'trained_fcn.pt'
 
-"""
-[Optional] Set the priority of the process to high in Windows:
-"""
+# """
+# [Optional] Set the priority of the process to high in Windows:
+# """
 # Found at
 # https://stackoverflow.com/questions/1023038/change-process-priority-in-python-cross-platform
-import win32api, win32process, win32con
-
-pid = win32api.GetCurrentProcessId()
-handle = win32api.OpenProcess(win32con.PROCESS_ALL_ACCESS, True, pid)
-win32process.SetPriorityClass(handle, win32process.REALTIME_PRIORITY_CLASS)
+# import win32api, win32process, win32con
+#
+# pid = win32api.GetCurrentProcessId()
+# handle = win32api.OpenProcess(win32con.PROCESS_ALL_ACCESS, True, pid)
+# win32process.SetPriorityClass(handle, win32process.REALTIME_PRIORITY_CLASS)
 
 
 """
 Get Dataloaders
 """
-data_dir = r'../../../../../PYTHON_CODES/DATASETS'
+# data_dir = r'../../../../../PYTHON_CODES/DATASETS'
+data_dir = r'../DATASETS'
 voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
 print("\nINFO: dataset directory:\n", voc_dir)
 
@@ -101,7 +101,7 @@ Training
 """
 start_time = time.time()
 
-num_epochs = 10
+num_epochs = 100#10
 
 # Tp keep track of the statistics at the completion of epoch
 train_losses, test_losses = [], []
@@ -127,7 +127,7 @@ for e in range(num_epochs):
     if test_loss <= valid_loss_min:
         msg = '\nINFO: validation loss decreased ({:.6f} --> {:.6f}). Saving model ...'
         print(msg.format(valid_loss_min, test_loss))
-        torch.save(net.state_dict(), checkpoint_filename)
+        torch.save(net.state_dict(), 'trained_fcn_at%d_val_acc_%.3f.pt'%(e,test_acc))
         valid_loss_min = test_loss
 
     print("End of Epoch: {}/{}.. ".format(e + 1, num_epochs),

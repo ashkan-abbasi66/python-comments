@@ -60,7 +60,7 @@ voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
 print("\nINFO: dataset directory:\n", voc_dir)
 
 img_dir = os.path.join(voc_dir, 'JPEGImages')
-img_fname = '2007_000783.jpg'
+# img_fname = '2007_000783.jpg'
 img_fname = '2007_000033.jpg'
 
 # plt.imsave('input_image.jpg', np.array(rgb))
@@ -72,14 +72,16 @@ img_tensor = torchvision.io.read_image(os.path.join(img_dir, img_fname))
 
 plt.imsave('input_image.jpg', img_tensor.permute((1,2,0)).numpy())
 
-inp = VOCSegDataset.normalize_input_image(img_tensor) # CHW ==>HWC
+# inp = VOCSegDataset.normalize_input_image(img_tensor)
+# ===> no need to do any preprocessing step here because
+# we will call do the required preprocessing in the "predict" function later
 
 
 """
 Forward pass
 """
 
-output = predict(net, inp, my_device)         # [320, 480]
+output = predict(net, img_tensor, my_device)         # [320, 480]
 
 
 """

@@ -7,7 +7,7 @@
 
 * **Part 2:** Building fully-connected neural networks with PyTorch
 
-* **Part 3:** How to train a fully-connected network with backpropagation on MNIST
+* `Part 3 - Training Neural Networks - MNIST.ipynb`: How to train a fully-connected network with backpropagation on MNIST. 
 
 * **Part 4:** Train a neural network (MLP) on Fashion-MNIST
 
@@ -19,7 +19,8 @@
   * [State of the art results on Fashion MNIST](https://paperswithcode.com/sota/image-classification-on-fashion-mnist).
 
 * **Part 6:** How to save and load trained models
-	* `./mlp-mnist/`: MLP applied to MNIST ~ 98% accuracy on test.
+	* [`./mlp-mnist/`](./mlp-mnist/): MLP applied to MNIST ~ 98% accuracy on test.
+	* Also, [`./assets/proj_mlp_mnist.py`](./assets/proj_mlp_mnist.py)
 
 * **CNN** 
 	*  `./cnn-basic-operations`: Applying custom filters and max-pooling.
@@ -74,7 +75,6 @@ Datasets used in this course:
 * CamVid: Segmentation dataset with per-pixel semantic segmentation of over 700 images. [link1](https://s3.amazonaws.com/fast-ai-imagelocal/camvid.tgz); [link2 from Kaggle](https://www.kaggle.com/datasets/carlolepelaars/camvid)
 * Misc. Links:
 	* https://course.fast.ai/datasets
-
 - - -
 
 

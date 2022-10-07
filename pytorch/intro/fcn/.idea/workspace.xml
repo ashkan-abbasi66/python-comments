@@ -34,7 +34,7 @@
       <recent name="C:\Users\abbasi\POSTDOC\GITHUB\python-comments\pytorch\intro\fcn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.inference_deeplabv3_resnet101 (1)">
+  <component name="RunManager" selected="Python.inference_fcn_one_image">
     <configuration name="inference_deeplabv3_resnet101 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fcn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,10 +142,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.inference_fcn_one_image" />
         <item itemvalue="Python.inference_deeplabv3_resnet101 (1)" />
         <item itemvalue="Python.inference_fcn_resnet101" />
         <item itemvalue="Python.inference_fcn" />
-        <item itemvalue="Python.inference_fcn_one_image" />
         <item itemvalue="Python.inference_deeplabv3_resnet101" />
       </list>
     </recent_temporary>
@@ -178,11 +178,6 @@
           <url>file://$PROJECT_DIR$/inference_deeplabv3_resnet101.py</url>
           <line>59</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/inference_fcn_one_image.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

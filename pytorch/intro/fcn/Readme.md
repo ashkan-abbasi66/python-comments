@@ -139,7 +139,8 @@ print(net(X).shape)  # torch.Size([1, 21, 320, 480])
 ## TODO:
 
 - [ ] **Dice score**
-  - [Metrics to Evaluate your Semantic Segmentation Model](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
+  - [Blog: Metrics to Evaluate your Semantic Segmentation Model](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
+- [ ] **[Blog: UNet](https://medium.com/towards-data-science/u-net-b229b32b4a71)**
 - [ ] write inference on one image for the trained FCN. Compare its result with pretrained models.
 - [ ] Full FCN implementation
 - [ ] Change dataset (e.g., use CamVid)
