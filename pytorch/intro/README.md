@@ -20,7 +20,6 @@
 
 * **Part 6:** How to save and load trained models
 	* [`./mlp-mnist/`](./mlp-mnist/): MLP applied to MNIST ~ 98% accuracy on test.
-	* Also, [`./assets/proj_mlp_mnist.py`](./assets/proj_mlp_mnist.py)
 
 * **CNN** 
 	*  `./cnn-basic-operations`: Applying custom filters and max-pooling.
