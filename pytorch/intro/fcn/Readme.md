@@ -136,10 +136,10 @@ print(net(X).shape)  # torch.Size([1, 21, 320, 480])
 - D2L book, [14.9](https://d2l.ai/chapter_computer-vision/semantic-segmentation-and-dataset.html) to [14.11](https://d2l.ai/chapter_computer-vision/fcn.html).
 - Long, Jonathan, Evan Shelhamer, and Trevor Darrell. "Fully convolutional networks for semantic segmentation." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 3431-3440. 2015.
 
-
 ## TODO:
 
-- [ ] Dice score
+- [ ] **Dice score**
+  - [Metrics to Evaluate your Semantic Segmentation Model](https://towardsdatascience.com/metrics-to-evaluate-your-semantic-segmentation-model-6bcb99639aa2)
 - [ ] write inference on one image for the trained FCN. Compare its result with pretrained models.
 - [ ] Full FCN implementation
 - [ ] Change dataset (e.g., use CamVid)

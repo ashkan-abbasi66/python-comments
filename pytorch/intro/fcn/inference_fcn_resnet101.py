@@ -2,8 +2,7 @@
 Resource:
 https://colab.research.google.com/github/spmallick/learnopencv/blob/master/PyTorch-Segmentation-torchvision/intro-seg.ipynb#scrollTo=2AB5w01teQ4-
 """
-
-from torchvision import models
+import torchvision
 import torchvision.transforms as T
 from PIL import Image
 import matplotlib.pyplot as plt
@@ -21,7 +20,7 @@ os.environ['TORCH_HOME'] = '../../../../trained_models/' #setting the environmen
 
 my_device = "cpu"
 
-fcn = models.segmentation.fcn_resnet101(pretrained=True)
+fcn = torchvision.models.segmentation.fcn_resnet101(pretrained=True)
 fcn.eval()
 
 """
@@ -39,7 +38,7 @@ img = Image.open(os.path.join(img_dir, img_fname))
 plt.imsave('input_image.jpg', np.array(img))
 print("input image shape: ", np.array(img).shape)  # (437, 480, 3)
 
-start_time = time.time()
+
 
 transpose = T.Compose([#T.Resize(256),
                  #T.CenterCrop(224),
@@ -52,6 +51,7 @@ inp = transpose(img).unsqueeze(0).to(my_device)   # torch.Size([1, 3, 224, 224])
 """
 Forward pass
 """
+start_time = time.time()
 # NOTE:
 #   Usually, the output of a model is a torch.Tensor. But, the output of
 #   a torchvision model is an OrderedDict.
@@ -70,10 +70,12 @@ save the output as an image
 om = torch.argmax(out.squeeze(), dim=0).detach().cpu().numpy()
 print (om.shape)     # (224, 224)
 
+class_numbers  = list(np.unique(om))
+print([VOC_CLASSES[cn] for cn in class_numbers])
+
 rgb = label2image(torch.argmax(out.squeeze(), dim=0), 'cpu')
 rgb = np.array(rgb).astype('uint8')
 plt.imsave('output_image_fcn_resnet101.jpg', np.array(rgb))
 
-class_numbers  = list(np.unique(om))
-print([VOC_CLASSES[cn] for cn in class_numbers])
+
 

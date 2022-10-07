@@ -4,7 +4,7 @@ from utils_model import *
 import torch.nn
 import time
 
-data_dir = r'E:\POSTDOC\PYTHON_CODES\DATASETS'
+data_dir = r'../../../../../PYTHON_CODES/DATASETS'
 voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
 print(voc_dir)
 
@@ -44,7 +44,8 @@ Predictions on some test images
 
 net.to(my_device)
 
-checkpoint = torch.load(checkpoint_filename)
+checkpoint = torch.load(checkpoint_filename,
+                        map_location=torch.device(my_device))
 net.load_state_dict(checkpoint)
 
 test_features, test_labels = read_voc_images(voc_dir, is_train=False)

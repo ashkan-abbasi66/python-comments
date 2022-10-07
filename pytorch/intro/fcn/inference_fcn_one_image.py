@@ -6,7 +6,7 @@ import time
 from PIL import Image
 import numpy as np
 
-data_dir = r'E:\POSTDOC\PYTHON_CODES\DATASETS'
+data_dir = r'../../../../../PYTHON_CODES/DATASETS'
 voc_dir = os.path.join(data_dir, 'VOCdevkit/VOC2012')
 print(voc_dir)
 
@@ -61,18 +61,24 @@ print("\nINFO: dataset directory:\n", voc_dir)
 
 img_dir = os.path.join(voc_dir, 'JPEGImages')
 img_fname = '2007_000783.jpg'
+img_fname = '2007_000033.jpg'
+
+# plt.imsave('input_image.jpg', np.array(rgb))
 
 # img = Image.open(os.path.join(img_dir, img_fname))
 
 mode = torchvision.io.image.ImageReadMode.RGB
 img_tensor = torchvision.io.read_image(os.path.join(img_dir, img_fname))
 
-inp = VOCSegDataset.normalize_input_image(img_tensor)
+plt.imsave('input_image.jpg', img_tensor.permute((1,2,0)).numpy())
+
+inp = VOCSegDataset.normalize_input_image(img_tensor) # CHW ==>HWC
 
 
 """
 Forward pass
 """
+
 output = predict(net, inp, my_device)         # [320, 480]
 
 

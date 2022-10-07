@@ -1,3 +1,7 @@
+"""
+python train_fcn.py
+"""
+
 from utils_io import *
 from utils_model import *
 import torch.nn
