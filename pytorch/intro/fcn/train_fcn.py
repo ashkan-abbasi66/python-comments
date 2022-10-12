@@ -101,7 +101,7 @@ Training
 """
 start_time = time.time()
 
-num_epochs = 100#10
+num_epochs = 10
 
 # Tp keep track of the statistics at the completion of epoch
 train_losses, test_losses = [], []
@@ -160,28 +160,3 @@ plt.savefig('plot_train_validation_accuracies.png')
 plt.close()
 # plt.show()
 
-
-# """
-# Predictions on some test images
-# """
-# test_features, test_labels = read_voc_images(voc_dir, is_train=False)
-#
-# checkpoint = torch.load(checkpoint_filename)
-# net.load_state_dict(checkpoint)
-#
-# image_lists = []
-# n_rows = 4
-# for i in range(n_rows):
-#     crop_rect = (0, 0, 320, 480)
-#
-#     input_image = crop_image(test_features[i], crop_rect)   # [3, 320, 480]
-#     output = predict(net, input_image, my_device)           # [320, 480]
-#     pred = label2image(output, my_device)                   # [320, 480, 3]
-#     label_image = crop_image(test_labels[i], crop_rect)     # [3, 320, 480]
-#
-#     image_lists.append([input_image.permute(1, 2, 0), pred.cpu(), label_image.permute(1, 2, 0)])
-#
-# plot_images_in_rows(image_lists, len(image_lists), save_path='')
-# plot_images_in_rows(image_lists, len(image_lists), save_path='plot_some_test_images')
-#
-# temp = input('Press Enter to End the Program. ')
