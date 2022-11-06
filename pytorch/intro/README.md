@@ -51,11 +51,11 @@
     * [`./segmentation/fcn/`](./segmentation/fcn/): Semantic segmentation on PASCAL VOC 2012 with ResNet18 as feature extractor.
     * https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvzsion/
     * Modern Computer Vision with PyTorch - Chapter ?
-  * [`./segmentation/ud_unet_exercise/`](./segmentation/ud_unet_exercise/)
+  * [`./segmentation/udcity_unet_exercise/`](./segmentation/udcity_unet_exercise/)
 
 * **Object Detection**: [`./od/`](./od)
   * `bounding-box-representations`
-  * `ud_od_exercise`
+  * `udcity_od_exercise`
 
 * [ ] **RNN**: `./rnn/`
 
