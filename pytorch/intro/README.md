@@ -49,9 +49,10 @@
 * **Segmentation**:
   * Fully Convolutional Networks:
     * [`./segmentation/fcn/`](./segmentation/fcn/): Semantic segmentation on PASCAL VOC 2012 with ResNet18 as feature extractor.
-    * See also, Modern Computer Vision with PyTorch
-  * [`./segmentation/udcity_unet_exercise/`](./segmentation/udcity_unet_exercise/)
-  * Training model for cars segmentation on [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) dataset using [segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch/blob/master/examples/cars%20segmentation%20(camvid).ipynb)
+    * See also, Modern Computer Vision with PyTorch for implementing UNet from scratch.
+  * [segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch) library:
+    * [`./segmentation/udcity_unet_exercise/`](./segmentation/udcity_unet_exercise/)
+    * Training model for cars segmentation on [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) dataset using [segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch/blob/master/examples/cars%20segmentation%20(camvid).ipynb)
 
 * **Object Detection**: [`./od/`](./od)
   * `bounding-box-representations`
