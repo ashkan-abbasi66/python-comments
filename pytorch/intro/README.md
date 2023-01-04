@@ -49,15 +49,17 @@
 * **Segmentation**:
   * Fully Convolutional Networks:
     * [`./segmentation/fcn/`](./segmentation/fcn/): Semantic segmentation on PASCAL VOC 2012 with ResNet18 as feature extractor.
-    * https://learnopencv.com/pytorch-for-beginners-semantic-segmentation-using-torchvzsion/
-    * Modern Computer Vision with PyTorch - Chapter ?
+    * See also, Modern Computer Vision with PyTorch
   * [`./segmentation/udcity_unet_exercise/`](./segmentation/udcity_unet_exercise/)
+  * Training model for cars segmentation on [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) dataset using [segmentation_models.pytorch](https://github.com/qubvel/segmentation_models.pytorch/blob/master/examples/cars%20segmentation%20(camvid).ipynb)
 
 * **Object Detection**: [`./od/`](./od)
   * `bounding-box-representations`
   * `udcity_od_exercise`
 
 * [ ] **RNN**: `./rnn/`
+  * [Embeddings (Word2Vec)](./rnn/word2vec-embeddings): Implement the Word2Vec model to find semantic representations of words for use in natural language processing. ([org. link](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/word2vec-embeddings))
+
 
 ---------------------------
 * [ ] **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`

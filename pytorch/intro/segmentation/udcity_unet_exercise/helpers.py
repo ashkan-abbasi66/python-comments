@@ -1,3 +1,23 @@
+"""
+
+PennFudanDataset is the Dataset class.
+
+get_data_loaders returns a dictionary containing Dataloaders,
+    data_loaders["train"]
+    data_loaders["valid"]
+    The list of transforms for training or validation sets are the input arguments.
+
+compute_mean_and_std
+    Compute per-channel mean and std of the dataset
+    (to be used in transforms.Normalize())
+    Albumentations is utilized when creating a Dateset object before computing mean and std.
+
+
+plot_results
+"""
+
+
+
 import os
 import numpy as np
 import pandas as pd
