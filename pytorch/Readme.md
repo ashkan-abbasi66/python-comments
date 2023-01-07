@@ -13,6 +13,8 @@ Use PyTorch in **multiple domains** speech, CV, and NLP => [PyTorch Fundamentals
 - [Jupyter notebook website](https://uvadlc-notebooks.readthedocs.io/en/latest/index.html); [Github](https://github.com/phlippe/uvadlc_notebooks); [assignemts](https://github.com/phlippe/uvadlc_notebooks)
 - [Tutorial recordings](https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA)
 
+Also, ★★ **[DLVU](https://dlvu.github.io/)** ★★
+
 [Sebastian Raschka/introduction to deep learning](https://sebastianraschka.com/blog/2021/dl-course.html) - [video lectures](https://www.youtube.com/watch?v=1nqCZqDYPp0&list=PLTKMiZHVd_2KJtIXOW0zFhFfBaJJilH51)
 
 - [codes](./rasbt-intro-to-DL) (copied from [here](https://github.com/rasbt/stat453-deep-learning-ss21))
