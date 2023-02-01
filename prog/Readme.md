@@ -17,6 +17,19 @@ Textbooks:
 
 
 # Misc. Notes
+
+- **Remove elements in a list, given their indices**: You can only use an *integer* (`l.pop(0)`) or *slicing* (`l = l[1::2]`) to remove elements from a list. 
+
+    ```python
+    l = ["a","b","c","d","e"]
+    del_idx = [1,3]
+    l2 = [e for i,e in enumerate(l) if i not in del_idx] # l2 => ['a', 'c', 'e']
+
+    l = ["a","b","c","d","e"]
+    keep_idx = [0, 2, 4]
+    l2 = [e for i,e in enumerate(l) if i in keep_idx] # l2 => ['a', 'c', 'e']
+    ```
+
 - **Copy files in a folder into another folder**:
 
     ```python
