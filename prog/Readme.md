@@ -1,6 +1,6 @@
 # Python
 
-**[Design Patterns](https://github.com/3lf/design-patterns-for-humans)**
+**[Design Patterns ☆](https://github.com/3lf/design-patterns-for-humans)**
 
 [Practical Python Course](./dabeaz/)
 
