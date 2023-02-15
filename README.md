@@ -10,14 +10,14 @@ This repo. contains useful python tips for me!
 
 
 
-## Miscellaneous comments
+# Miscellaneous comments
 
 
 
 
 
 <a id="tf"></a>
-# Tensorflow
+## Tensorflow
 Folder: `tf-example` <br>
 
 - number of parameters of tensorflow model [here](https://stackoverflow.com/questions/47310132/number-of-cnn-learnable-parameters-python-tensorflow)
@@ -35,7 +35,7 @@ Folder: `tf-example` <br>
 > - `building_nnlayers_CAN24.py`
 > - `building_nnlayers_DPED_Resnet.py`
 <a id="tf-saveModel"></a>
-## Save model during training
+### Save model during training
 ```python
 sess.run(tf.global_variables_initializer())
 
@@ -83,7 +83,7 @@ At this time, I don't know much about those files!<br>
 
 
 
-## Keras<a id = "keras"></a>
+### Keras<a id = "keras"></a>
 
 [Model - MiniGoogleLeNet](./tf-examples/model_tf_keras_minigooglenet_functional.py)
 
@@ -118,7 +118,7 @@ module_name = SourceFileLoader("module_name",module_path).load_module()
 
 <a id="todo"></a>
 
-# ToDo
+## ToDo
 
 indexing and slicing techniques: `indexing.py`<br>
 
