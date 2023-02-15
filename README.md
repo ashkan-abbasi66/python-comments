@@ -1,7 +1,7 @@
 # my python comments
 This repo. contains useful python tips for me!
 <br>Implements\PythonCodes
-
+- [Git](#git)
 - [Tensorflow](#tf)
     - [Save model during training](#tf-saveModel)
     - [Keras](#keras)
@@ -12,7 +12,20 @@ This repo. contains useful python tips for me!
 
 # Miscellaneous comments
 
-
+<a id="git"></a>
+## Git
+- **Convert an existing non-empty directory into a Github repository**
+[ref](https://stackoverflow.com/questions/3311774/how-to-convert-existing-non-empty-directory-into-a-git-working-directory-and-pus)
+```shell
+cd <localdir>
+git init
+git add .
+git commit -m 'message'
+git branch -M main
+# create a github repository and use its URL in the below command.
+git remote add origin <url> # Example: git remote add origin https://github.com/ashkan-abbasi66/vf-PyVisualField.git
+git push -u origin main
+```
 
 
 
@@ -83,7 +96,7 @@ At this time, I don't know much about those files!<br>
 
 
 
-### Keras<a id = "keras"></a>
+## Keras<a id = "keras"></a>
 
 [Model - MiniGoogleLeNet](./tf-examples/model_tf_keras_minigooglenet_functional.py)
 
@@ -118,7 +131,7 @@ module_name = SourceFileLoader("module_name",module_path).load_module()
 
 <a id="todo"></a>
 
-## ToDo
+# ToDo
 
 indexing and slicing techniques: `indexing.py`<br>
 
