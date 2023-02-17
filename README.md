@@ -28,6 +28,9 @@ git push -u origin main
 ```
 
 
+- **Shrink `.git` folder**: `git gc --aggressive --prune` [ref](https://stackoverflow.com/questions/5613345/how-to-shrink-the-git-folder).
+
+
 
 <a id="tf"></a>
 ## Tensorflow
