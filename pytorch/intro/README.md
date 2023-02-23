@@ -60,6 +60,7 @@
 
 * [ ] **RNN**: `./rnn/`
   * [Embeddings (Word2Vec)](./rnn/word2vec-embeddings): Implement the Word2Vec model to find semantic representations of words for use in natural language processing. ([org. link](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/word2vec-embeddings))
+  * **[LSTM examples](./rnn/lstm-1)**
 
 
 ---------------------------

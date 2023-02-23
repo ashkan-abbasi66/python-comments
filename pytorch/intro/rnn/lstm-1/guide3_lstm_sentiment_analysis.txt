@@ -1,0 +1,128 @@
+**************************************************************
+In the following I reported the outputs of these configurations:
+- Using nn.LSTM
+- Using nn.RNN
+- Using nn.LSTM - hidden states were initialized at the beginning of each mini-batch
+
+
+**************************************************************
+nn.LSTM - hidden states were initialized at the beginning of each mini-batch
+*************
+Training ...
+Epoch: 1/4... Step: 100... Loss: 0.675215... Val Loss: 0.629043
+Epoch: 1/4... Step: 200... Loss: 0.645723... Val Loss: 0.628441
+Epoch: 1/4... Step: 300... Loss: 0.538028... Val Loss: 0.565477
+Epoch: 2/4... Step: 100... Loss: 0.432302... Val Loss: 0.508969
+Epoch: 2/4... Step: 200... Loss: 0.425561... Val Loss: 0.538071
+Epoch: 2/4... Step: 300... Loss: 0.418032... Val Loss: 0.525823
+Epoch: 3/4... Step: 100... Loss: 0.327636... Val Loss: 0.470718
+Epoch: 3/4... Step: 200... Loss: 0.368851... Val Loss: 0.487130
+Epoch: 3/4... Step: 300... Loss: 0.370164... Val Loss: 0.526865
+Epoch: 4/4... Step: 100... Loss: 0.073878... Val Loss: 0.592211
+Epoch: 4/4... Step: 200... Loss: 0.175305... Val Loss: 0.508572
+Epoch: 4/4... Step: 300... Loss: 0.266264... Val Loss: 0.502777
+Elapsed time for TRAINING = 41.5
+Inference on test set ...
+Elapsed time for TEST = 0.3
+Test loss: 0.529
+Test accuracy: 0.792
+Inference on arbitrary inputs ...
+input size: torch.Size([1, 200])
+Prediction value, pre-rounding: 0.003364
+Negative review detected.
+Elapsed time for one test example = 0.0
+(py39torch112) [abbasi@exahead1 lstm-1]$
+
+**************************************************************
+nn.LSTM
+*************
+
+(py39torch112) [abbasi@exahead1 lstm-1]$ srun -u -p gpu --gres gpu:1 --mem-per-cpu=16GB python guide3_lstm_sentiment_analysis.py
+Number of reviews in the dataset:  25001
+Some words are:
+ ['bromwell', 'high', 'is', 'a', 'cartoon', 'comedy', 'it', 'ran', 'at', 'the']
+Assign integer indices to words and labels ...
+The last word is "the" with 336713 repetitions.
+The last word is "hued" with 1 repetitions.
+There are 74072 (= vocabulary size) unique words in the vocabulary.
+Numeric representation of the first review:
+ [21025, 308, 6, 3, 1050, 207, 8, 2138, 32, 1, 171, 57, 15, 49, 81, 5785, 44, 382, 110, 140, 15, 5194, 60, 154, 9, 1, 4975, 5852, 475, 71, 5, 260, 12, 21025, 308, 13, 1978, 6, 74, 2395, 5, 613, 73, 6, 5194, 1, 24103, 5, 1983, 10166, 1, 5786, 1499, 36, 51, 66, 204, 145, 67, 1199, 5194, 19869, 1, 37442, 4, 1, 221, 883, 31, 2988, 71, 4, 1, 5787, 10, 686, 2, 67, 1499, 54, 10, 216, 1, 383, 9, 62, 3, 1406, 3686, 783, 5, 3483, 180, 1, 382, 10, 1212, 13583, 32, 308, 3, 349, 341, 2913, 10, 143, 127, 5, 7690, 30, 4, 129, 5194, 1406, 2326, 5, 21025, 308, 10, 528, 12, 109, 1448, 4, 60, 543, 102, 12, 21025, 308, 6, 227, 4146, 48, 3, 2211, 12, 8, 215, 23]
+Outlier removal ...
+Number of reviews before removing outliers:  25001
+# of zero-length reviews = 1
+# of reviews with maximum length (2514) = 1
+Indices of outliers (they will be removed):
+ [25000, 3908]
+Number of reviews after removing outliers:  24999
+Building feature vectors ...
+First values of padded / truncated feature vectors for the first three reviews:
+ [[    0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0]
+ [    0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0]
+ [22382    42 46418    15   706 17139  3389    47    77    35  1819    16
+    154    19   114     3  1305     5   336   147    22     1   857    12
+     70   281  1168   399    36   120]]
+Feature Shapes:
+Train set: (19999, 200)
+ Validation set: (2500, 200)
+ Test set: (2500, 200)
+Datasets and DataLoaders ...
+GPU is available.
+Training ...
+Epoch: 1/4... Step: 100... Loss: 0.650032... Val Loss: 0.658147
+Epoch: 1/4... Step: 200... Loss: 0.558564... Val Loss: 0.666308
+Epoch: 1/4... Step: 300... Loss: 0.698191... Val Loss: 0.695929
+Epoch: 2/4... Step: 100... Loss: 0.715779... Val Loss: 0.699007
+Epoch: 2/4... Step: 200... Loss: 0.627235... Val Loss: 0.605725
+Epoch: 2/4... Step: 300... Loss: 0.464182... Val Loss: 0.610396
+Epoch: 3/4... Step: 100... Loss: 0.428043... Val Loss: 0.553475
+Epoch: 3/4... Step: 200... Loss: 0.258062... Val Loss: 0.472411
+Epoch: 3/4... Step: 300... Loss: 0.271959... Val Loss: 0.443227
+Epoch: 4/4... Step: 100... Loss: 0.318315... Val Loss: 0.498231
+Epoch: 4/4... Step: 200... Loss: 0.173949... Val Loss: 0.492669
+Epoch: 4/4... Step: 300... Loss: 0.211152... Val Loss: 0.482693
+Elapsed time for TRAINING = 42.9
+Inference on test set ...
+Elapsed time for TEST = 0.3
+Test loss: 0.484
+Test accuracy: 0.799
+Inference on arbitrary inputs ...
+input size: torch.Size([1, 200])
+Prediction value, pre-rounding: 0.008622
+Negative review detected.
+Elapsed time for one test example = 0.0
+(py39torch112) [abbasi@exahead1 lstm-1]$
+
+
+**************************************************************
+nn.RNN
+*************
+
+Training ...
+Epoch: 1/4... Step: 100... Loss: 0.602243... Val Loss: 0.625515
+Epoch: 1/4... Step: 200... Loss: 0.597371... Val Loss: 0.609618
+Epoch: 1/4... Step: 300... Loss: 0.589551... Val Loss: 0.557968
+Epoch: 2/4... Step: 100... Loss: 0.401766... Val Loss: 0.487537
+Epoch: 2/4... Step: 200... Loss: 0.542048... Val Loss: 0.485206
+Epoch: 2/4... Step: 300... Loss: 0.371182... Val Loss: 0.461638
+Epoch: 3/4... Step: 100... Loss: 0.353499... Val Loss: 0.491068
+Epoch: 3/4... Step: 200... Loss: 0.404415... Val Loss: 0.547889
+Epoch: 3/4... Step: 300... Loss: 0.339945... Val Loss: 0.481120
+Epoch: 4/4... Step: 100... Loss: 0.270230... Val Loss: 0.629843
+Epoch: 4/4... Step: 200... Loss: 0.133113... Val Loss: 0.493871
+Epoch: 4/4... Step: 300... Loss: 0.136457... Val Loss: 0.470682
+Elapsed time for TRAINING = 43.6
+Inference on test set ...
+Elapsed time for TEST = 0.5
+Test loss: 0.513
+Test accuracy: 0.803
+Inference on arbitrary inputs ...
+input size: torch.Size([1, 200])
+Prediction value, pre-rounding: 0.003733
+Negative review detected.
+Elapsed time for one test example = 0.0
+(py39torch112) [abbasi@exahead1 lstm-1]$
+
