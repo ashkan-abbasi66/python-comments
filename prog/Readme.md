@@ -18,6 +18,28 @@ Textbooks:
 
 # Misc. Notes
 
+- **Working with meshgrid**
+
+    ```python
+    a = np.array([[1,2,3],
+                  [4,5,6]]) # Loosly assume that this is the output of a scalar function over a 2-D space.
+    # We need 2-D coordinate arrays to evaluate this function.
+    rr = [[0,0,0],[1,1,1]]
+    cc=[[0,1,2],[0,1,2]]
+    b = a[rr,cc]
+    (a == b).all()   # True
+
+    # Instead of constructing two 2-D coordinate arrays to address all possible 
+    # coordinates in the function space, I can use 1-D arrays to easily
+    # create those 2-D arrays that I need. This is where
+    # "meshgrid" is useful.
+ 
+    xx, yy = np.meshgrid(np.linspace(0,2,3), np.linspace(0,1,2))
+    bb = a[(yy).astype(int), (xx).astype(int)]
+    (bb == a).all()  # True    
+
+    ```
+
 - **Remove elements in a list, given their indices**: You can only use an *integer* (`l.pop(0)`) or *slicing* (`l = l[1::2]`) to remove elements from a list. 
 
     ```python
