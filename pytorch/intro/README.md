@@ -4,7 +4,7 @@
 	* For `autograd` in PyTorch, see `./guide_autograd_1.ipynb`, and `./guide_autograd_2_linear_regression_from_scratch.ipynb`
 
 	* [guide_datasets_1](./guide_datasets_1.ipynb): How to use `torch.utils.data.Dataset` and `torch.utils.data.DataLoader`.
-        * [HDF5 in PyTorch] Creating a Dataset object to be used by HDF5 files in PyTorch. 
+	 * [HDF5 in PyTorch](https://github.com/ashkan-abbasi66/pytorch-hdf5/tree/master) Creating a Dataset object to be used by HDF5 files in PyTorch. 
 
 * **Part 2:** Building fully-connected neural networks with PyTorch
 
