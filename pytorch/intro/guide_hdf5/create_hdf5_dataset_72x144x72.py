@@ -11,7 +11,12 @@ DESCRIPTION:
     of each record is used to create the required "datasets" in the HDF5 format.
         1000_image
         1000_vf
-
+Observation:
+I found that reading individual Numpy files from an SSD drive using the iterator
+defined in this file is faster than reading the contents of those files from one 
+big HDF5 file (with or without compression). Note that essentially this script
+stores the content of each Numpy files inside one HDF5 file and uses the file names
+as groups to access their contents.
 """
 import time
 
