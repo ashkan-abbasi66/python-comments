@@ -6,6 +6,7 @@
 	* [guide_datasets_1](./guide_datasets_1.ipynb): How to use `torch.utils.data.Dataset` and `torch.utils.data.DataLoader`.
         * [HDF5 in PyTorch](https://github.com/ashkan-abbasi66/pytorch-hdf5/tree/master) Creating a Dataset object to be used by HDF5 files in PyTorch.
         * [How to use HDF5 in Python](https://www.pythonforthelab.com/blog/how-to-use-hdf5-files-in-python/)
+        * See my examples at [guide_hdf5](./guide_hdf5) folder
 
 * **Part 2:** Building fully-connected neural networks with PyTorch
 
