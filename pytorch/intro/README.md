@@ -92,6 +92,10 @@ Datasets used in this course:
 
 # More Specific Notes
 
+* **learning rate and batch size**
+  - when multiplying the batch size by k, one should multiply the learning rate by sqrt(k) to keep the variance in the gradient expectation constant. See page 5 at [A. Krizhevsky. One weird trick for parallelizing convolutional neural networks](https://arxiv.org/abs/1404.5997).
+  - However, recent experiments with large mini-batches suggest for a simpler linear scaling rule, i.e multiply your learning rate by k when using mini-batch size of kN. See [P.Goyal et al.: Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour]
+  - See [here](https://stackoverflow.com/questions/53033556/how-should-the-learning-rate-change-as-the-batch-size-change)
 
 * **Set seed for random number generators**
 ```python
