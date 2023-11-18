@@ -1,6 +1,9 @@
 # my python comments
 
 * **[pytorch](./pytorch)**
+* **[prog](./prog)**
+* **[ml](./ml)**
+* **[graph and ml](https://github.com/ashkan-abbasi66/graph-and-ml)**
   
 <br>Implements\PythonCodes
 - [Git](#git)
