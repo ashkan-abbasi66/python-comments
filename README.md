@@ -1,5 +1,7 @@
 # my python comments
-This repo. contains useful python tips for me!
+
+* **[pytorch](./pytorch)**
+  
 <br>Implements\PythonCodes
 - [Git](#git)
 - [Tensorflow](#tf)
