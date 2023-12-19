@@ -1,5 +1,11 @@
 # my python comments
-This repo. contains useful python tips for me!
+
+* **[graph and ml](https://github.com/ashkan-abbasi66/graph-and-ml)**
+* **[pytorch](./pytorch)**
+* **[prog](./prog)**
+* **[ml](./ml)**
+
+  
 <br>Implements\PythonCodes
 - [Git](#git)
 - [Tensorflow](#tf)
