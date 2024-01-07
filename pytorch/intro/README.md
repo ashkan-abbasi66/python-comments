@@ -66,7 +66,7 @@
   * **[LSTM examples](./rnn/lstm-1)**
 
 * **Transformers**: [`./ViT/`](./ViT)
-  * [`Vision_Transformers_MNIST.ipynb`](`https://github.com/ashkan-abbasi66/python-comments/tree/master/pytorch/intro/ViT/Vision_Transformers_MNIST.ipynb`): Vision Transformer (ViT)
+  * `Vision_Transformers_MNIST.ipynb`: Vision Transformer (ViT)
   * 
 
     
