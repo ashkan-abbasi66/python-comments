@@ -66,39 +66,30 @@
   * **[LSTM examples](./rnn/lstm-1)**
 
 * **Transformers**: [`./ViT/`](./ViT)
-  * [`vision_transformer_mnist.ipynb`](`./ViT/vision_transformer_mnist.ipynb`): Vision Transformer (ViT)
+  * [`Vision_Transformers_MNIST.ipynb`](`./ViT/Vision_Transformers_MNIST.ipynb`): Vision Transformer (ViT)
   * 
 
----------------------------
+    
+# Advanced Topics
+
+* **Activation Hooks**: Access to intermidiate activaqtions through forward hooks
+  * https://web.stanford.edu/~nanbhas/blog/forward-hooks-pytorch/
+
+
 * [ ] **Weight Initialization:** All zeros/ones; Uniform/Normal distributions; `./weight-initialization`
   * More on weight initialization: [link 1](https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial4/Optimization_and_Initialization.html#How-to-find-appropriate-initialization-values); [link 2](https://www.askpython.com/python-modules/initialize-model-weights-pytorch)
+
+
 * [ ] **Batch normalization**: `batch-norm` folder; 
   * [rasbt/batchnorm](../rasbt-intro-to-DL/L11/code/batchnorm.ipynb)
   * [A simple implementation of Batch Normalization using pytorch.](https://github.com/Johann-Huber/batchnorm_pytorch) [copied in batch-norm folder]
 
 
-- - -
-
-Datasets used in this course:
-* MNIST:
-* Fashion MNIST:
-* CIFAR-10:
-* Oxford 102 Flowers:
-* PASCAL VOC 2012:`./fcn/`; 
-* CamVid: Segmentation dataset with per-pixel semantic segmentation of over 700 images. [link1](https://s3.amazonaws.com/fast-ai-imagelocal/camvid.tgz); [link2 from Kaggle](https://www.kaggle.com/datasets/carlolepelaars/camvid)
-* Misc. Links:
-	* https://course.fast.ai/datasets
-- - -
-
-
-
-
-# More Specific Notes
-
 * **learning rate and batch size**
   - when multiplying the batch size by k, one should multiply the learning rate by sqrt(k) to keep the variance in the gradient expectation constant. See page 5 at [A. Krizhevsky. One weird trick for parallelizing convolutional neural networks](https://arxiv.org/abs/1404.5997).
   - However, recent experiments with large mini-batches suggest for a simpler linear scaling rule, i.e multiply your learning rate by k when using mini-batch size of kN. See [P.Goyal et al.: Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour]
   - See [here](https://stackoverflow.com/questions/53033556/how-should-the-learning-rate-change-as-the-batch-size-change)
+
 
 * **Set seed for random number generators**
 ```python
@@ -125,8 +116,6 @@ def set_seed(seed):
 
 
 
-
-
 # Model Benchmarking
 
 Benchmarking different models on different datasets:
@@ -136,6 +125,17 @@ Benchmarking different models on different datasets:
 
 
 
+# Extra notes
+
+Datasets used in this course:
+* MNIST:
+* Fashion MNIST:
+* CIFAR-10:
+* Oxford 102 Flowers:
+* PASCAL VOC 2012:`./fcn/`; 
+* CamVid: Segmentation dataset with per-pixel semantic segmentation of over 700 images. [link1](https://s3.amazonaws.com/fast-ai-imagelocal/camvid.tgz); [link2 from Kaggle](https://www.kaggle.com/datasets/carlolepelaars/camvid)
+* Misc. Links:
+	* https://course.fast.ai/datasets
 
 
 
