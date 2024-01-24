@@ -18,10 +18,19 @@
 
 # Miscellaneous comments
 
-## Navigate between code sections in PyCharm
-- Use `# region NAME` and `# endregion` to divide your code into different folds. Then, use `Ctrl+Alt+.` to get a list of your folds.
-- Use `Alt+Down` and `Alt+Up` to navigate between methods defined in a code.
-- 
+- **`os.list` and `os.walk` examples**
+    ```python
+    import os
+    file_list = os.listdir(data_dir)
+    for root, dir_names, file_names in os.walk(data_dir):
+        print(root, ", ", dir_names, ", ", file_names)
+    ```
+
+
+- **Navigate between code sections in PyCharm**
+  - Use `# region NAME` and `# endregion` to divide your code into different folds. Then, use `Ctrl+Alt+.` to get a list of your folds.
+  - Use `Alt+Down` and `Alt+Up` to navigate between methods defined in a code.
+
 
 <a id="git"></a>
 ## Git
