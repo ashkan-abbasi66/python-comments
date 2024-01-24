@@ -18,6 +18,11 @@
 
 # Miscellaneous comments
 
+## Navigate between code sections in PyCharm
+- Use `# region NAME` and `# endregion` to divide your code into different folds. Then, use `Ctrl+Alt+.` to get a list of your folds.
+- Use `Alt+Down` and `Alt+Up` to navigate between methods defined in a code.
+- 
+
 <a id="git"></a>
 ## Git
 - **Convert an existing non-empty directory into a Github repository**
