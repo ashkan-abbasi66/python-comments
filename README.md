@@ -19,29 +19,29 @@
 
 # Miscellaneous notes
 
-- **Working with meshgrid**
+#### Working with meshgrid
 
-    ```python
-    a = np.array([[1,2,3],
-                  [4,5,6]]) # Loosly assume that this is the output of a scalar function over a 2-D space.
-    # We need 2-D coordinate arrays to evaluate this function.
-    rr = [[0,0,0],[1,1,1]]
-    cc=[[0,1,2],[0,1,2]]
-    b = a[rr,cc]
-    (a == b).all()   # True
+```python
+a = np.array([[1,2,3],
+			  [4,5,6]]) # Loosly assume that this is the output of a scalar function over a 2-D space.
+# We need 2-D coordinate arrays to evaluate this function.
+rr = [[0,0,0],[1,1,1]]
+cc=[[0,1,2],[0,1,2]]
+b = a[rr,cc]
+(a == b).all()   # True
 
-    # Instead of constructing two 2-D coordinate arrays to address all possible 
-    # coordinates in the function space, I can use 1-D arrays to easily
-    # create those 2-D arrays that I need. This is where
-    # "meshgrid" is useful.
- 
-    xx, yy = np.meshgrid(np.linspace(0,2,3), np.linspace(0,1,2))
-    bb = a[(yy).astype(int), (xx).astype(int)]
-    (bb == a).all()  # True    
+# Instead of constructing two 2-D coordinate arrays to address all possible 
+# coordinates in the function space, I can use 1-D arrays to easily
+# create those 2-D arrays that I need. This is where
+# "meshgrid" is useful.
 
-    ```
+xx, yy = np.meshgrid(np.linspace(0,2,3), np.linspace(0,1,2))
+bb = a[(yy).astype(int), (xx).astype(int)]
+(bb == a).all()  # True    
 
-- **Remove elements in a list, given their indices**: You can only use an *integer* (`l.pop(0)`) or *slicing* (`l = l[1::2]`) to remove elements from a list. 
+```
+
+#### Remove elements in a list, given their indices**: You can only use an *integer* (`l.pop(0)`) or *slicing* (`l = l[1::2]`) to remove elements from a list. 
 
     ```python
     l = ["a","b","c","d","e"]
@@ -53,7 +53,7 @@
     l2 = [e for i,e in enumerate(l) if i in keep_idx] # l2 => ['a', 'c', 'e']
     ```
 
-- **Copy files in a folder into another folder**:
+#### Copy files in a folder into another folder
 
     ```python
     import os, shutil
@@ -72,9 +72,11 @@
                 shutil.copy2(s, d)
     ```
 
-- **Format a number with leading zeros**: `("%d"%int_var).zfill(2)` - `print(f'{int_var:03})'`
+#### Format a number with leading zeros: `("%d"%int_var).zfill(2)` - `print(f'{int_var:03})'`
+- [Formatted output tutorial](https://python-course.eu/python-tutorial/formatted-output.php)
 
-- **Python Sequences (Sequence objects)**: 
+
+#### Python Sequences (Sequence objects) 
 	- They are ordered.
 	- There are 6 types: string (group of characters inside `""` or `''`), list, tuple, byte sequence, byte array, and range object.
 	- immutable sequences: 
@@ -94,22 +96,22 @@
 	- supported operators: +(concatenation), *(repeat), membership(`in`), slicing
 	- supported functions: `len()`, `min() & max()`, `index()`, `count()`, 
 
-- [Formatted output tutorial](https://python-course.eu/python-tutorial/formatted-output.php)
 
-- **Python Collections**: unordered and unindexed data structures
-	- sets and dictionaries are python collections. They are both mutable (you can add, remove, update). But do note that keys in a dictionary is not mutable. 
-	- sets
-	```python
-    setA = {1,2,3,4,5,4}
-    setB = set({10,20,30,20,30})
-    setC = set() # {}
-    
-    ```
-    	- sets cannot contain sets, lists, and dictionaries.
+#### Python Collections
+unordered and unindexed data structures
+- sets and dictionaries are python collections. They are both mutable (you can add, remove, update). But do note that keys in a dictionary is not mutable. 
+- sets
+```python
+setA = {1,2,3,4,5,4}
+setB = set({10,20,30,20,30})
+setC = set() # {}
+
+```
+- sets cannot contain sets, lists, and dictionaries.
 
 - In contrast to `Dict()`, `OrderedDict()` preserves the order in which the keys are inserted. (matters when iterating on it)
 
-- **`os.list` and `os.walk` examples**
+#### `os.list` and `os.walk` examples
     ```python
     import os
     file_list = os.listdir(data_dir)
@@ -118,25 +120,25 @@
     ```
 
 
-- **Navigate between code sections in PyCharm**
+#### Navigate between code sections in PyCharm
   - Use `# region NAME` and `# endregion` to divide your code into different folds. Then, use `Ctrl+Alt+.` to get a list of your folds.
   - Use `Alt+Down` and `Alt+Up` to navigate between methods defined in a code.
 
 
-- Set priority of a process
-	```python
-	"""
-	Set the priority of the process to high in Windows:
-	"""
-	# Found at
-	# https://stackoverflow.com/questions/1023038/change-process-priority-in-python-cross-platform
-	import win32api, win32process, win32con
-	
-	pid = win32api.GetCurrentProcessId()
-	handle = win32api.OpenProcess(win32con.PROCESS_ALL_ACCESS, True, pid)
-	win32process.SetPriorityClass(handle, win32process.HIGH_PRIORITY_CLASS)
-	```
-	If you want to use `REALTIME_PRIORITY_CLASS`, check [here](https://stackoverflow.com/questions/44049685/how-to-set-real-time-priority-with-psutil).
+#### Set priority of a process
+```python
+"""
+Set the priority of the process to high in Windows:
+"""
+# Found at
+# https://stackoverflow.com/questions/1023038/change-process-priority-in-python-cross-platform
+import win32api, win32process, win32con
+
+pid = win32api.GetCurrentProcessId()
+handle = win32api.OpenProcess(win32con.PROCESS_ALL_ACCESS, True, pid)
+win32process.SetPriorityClass(handle, win32process.HIGH_PRIORITY_CLASS)
+```
+If you want to use `REALTIME_PRIORITY_CLASS`, check [here](https://stackoverflow.com/questions/44049685/how-to-set-real-time-priority-with-psutil).
 
 
 
