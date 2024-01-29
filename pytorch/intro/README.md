@@ -114,7 +114,42 @@ def set_seed(seed):
 
   Usage: `tensorboard --logdir=logs`
 
+* Image dataset standardization
+  ```python
+  import os
+  from PIL import Image
+  import numpy as np
+  
+  def compute_mean_std_of_image_directory(dir_path):
+    """
+    Given a directory of images, it computes mean and standard deviation of pixels
+    """
+    file_list = os.listdir(dir_path)
+    x_sum = 0
+    x2_sum = 0
+    N = 0
 
+    for fname in file_list:
+        I = Image.open(os.path.join(dir_path, fname))
+        img = np.asarray(I).astype(np.float32)
+        img /= 255.
+
+        x_sum += img.sum()
+        x2_sum += (img ** 2).sum()
+        N += np.prod(img.shape)
+
+    Ex = x_sum / N     # mean of pixels
+    Ex2 = x2_sum / N   # mean of squared pixel values
+    var = Ex2 - Ex ** 2
+    pixel_std = np.sqrt(var)
+
+    print("Pixels mean = E[x] = ", Ex)
+    print("E[x^2] =", Ex2)
+    print("Pixels variance = E[x^2] - E[x]^2 = ", var)
+    print("Pixels STD = ", pixel_std)
+
+    return Ex, pixel_std
+  ```
 
 # Model Benchmarking
 
