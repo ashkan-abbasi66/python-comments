@@ -19,6 +19,45 @@
 
 # Miscellaneous notes
 
+
+#### Basic Image processing operations
+
+IMREAD, IMWRITE, IMSHOW, etc.
+
+- [`guide_image_basics_git.ipynb`](./guide_image_basics_git.ipynb)
+
+
+#### Assert
+`assert condition`
+<br>is equivalent to:<br>
+```python
+if not condition:
+    raise AssertionError()
+```
+<br> Another example:
+`assert 2 + 2 == 5, "We've got a problem"`
+<br>Note that assert is an statement. So, the following command will not work:
+`assert(2 + 2 == 5, "We've got a problem")`
+The reason is that bool( (False, "We've got a problem") ) evaluates to True. (a non-empty tuple evaluates to True in a boolean context).
+
+#### simple object-oriented programing examples 
+
+- Object oriented (OOD) examples based on Learn Python in One Day (2nd Edition) - page: 68
+  - `./prog/simple-object-oriented-example`
+
+
+#### Parsing command line arguments
+`sys.argv` is a list which contains the command-line arguments. <br>
+`argparse` module makes it easy to write user-friendly command-line interfaces. It automatically generates help and usage messages and raise exceptions.<br>
+see `./prog/commandline-arguments-examples`:<br>
+`example1.py`: `sys.argv`, `string.startswith`, `string.split`<br>
+`example2.py`: `argparse.ArgumentParser()`, `add_argument`, `vars(ap.parse_args())`
+
+
+#### Install Python, Tensorflow, and PyCharm
+- [Quick guide for installing Python, Tensorflow, and PyCharm on Windows](https://medium.com/@ashkan.abbasi/quick-guide-for-installing-python-tensorflow-and-pycharm-on-windows-ed99ddd9598) - After installation, you may need to install some libraries. E.g., `pip install opencv-python pandas pillow jupyter matplotlib sklearn`
+
+
 #### Working with meshgrid
 
 ```python
