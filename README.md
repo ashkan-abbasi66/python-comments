@@ -22,6 +22,12 @@
 #### Measuring RUNTIME
 - `./progs/measuring-runtime`: Using wrapper (or decorator) and context manager
 
+- To make Python codes faster, you can use *Numba*.
+  ```shell
+  : Numba is a just-in-time (JIT) compiler for Python. 
+  : Numba works best on code that uses NumPy arrays and functions, and loops.
+  ```
+
 
 #### Basic Image processing operations
 
