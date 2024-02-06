@@ -19,6 +19,9 @@
 
 # Miscellaneous notes
 
+#### Measuring RUNTIME
+- `./progs/measuring-runtime`: Using wrapper (or decorator) and context manager
+
 
 #### Basic Image processing operations
 
