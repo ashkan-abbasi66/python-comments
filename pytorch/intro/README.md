@@ -70,7 +70,7 @@
   * 
 
 
-* **Low-Rank Adaptation (LoRA)**": How to fine-tune large model by introducing a smaller number of trainable parameters instead of modifying the entire model
+* **Low-Rank Adaptation (LoRA)**": How to fine-tune large models by introducing a smaller number of trainable parameters instead of modifying the entire model
   * [Improving LoRA - Weight-Decomposed Low-Rank Adaptation](https://magazine.sebastianraschka.com/p/lora-and-dora-from-scratch)
 
 
