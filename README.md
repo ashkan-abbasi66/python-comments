@@ -300,6 +300,15 @@ module_name = SourceFileLoader("module_name",module_path).load_module()
 
 ```
 
+Example:
+```python
+from importlib.machinery import SourceFileLoader 
+module_path=r'C:/merge_datasets.py'
+merge_datasets = SourceFileLoader("merge_datasets.get_all_data", module_path).load_module()
+
+df = merge_datasets.get_all_data()
+```
+
 
 
 
